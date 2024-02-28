@@ -17,17 +17,41 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #d1d5db;
+}
+
+/* Animações para menu-secondary */
+.menu-secondary-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.menu-secondary-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.menu-secondary-exit {
+  opacity: 1;
+}
+.menu-secondary-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 150ms, transform 150ms;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+.navbar-contact-buttons {
+  @apply font-bold opacity-50 hover:opacity-100 cursor-pointer text-[0.60rem];
+}
+
+.mobile-sidebar {
+  @apply flex gap-3 items-center justify-center p-3 bg-zinc-300 hover:bg-zinc-500 flex-grow rounded font-semibold;
+}
+
+.mobile-sidebar-link {
+  @apply flex items-center flex-row px-1 py-2  rounded-md hover:cursor-pointer;
 }
