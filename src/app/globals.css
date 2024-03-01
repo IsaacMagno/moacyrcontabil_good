@@ -44,6 +44,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.flex-col-gap-2 {
+  @apply flex flex-col gap-2;
+}
+
 .navbar-contact-buttons {
   @apply font-bold opacity-50 hover:opacity-100 cursor-pointer text-[0.60rem];
 }
@@ -54,4 +59,8 @@ body {
 
 .mobile-sidebar-link {
   @apply flex items-center flex-row px-1 py-2  rounded-md hover:cursor-pointer;
+}
+
+.footer-icons {
+  @apply flex items-center gap-4;
 }
