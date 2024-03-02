@@ -9,15 +9,15 @@ import { AlarmClockCheck, Mail, MapPin, Phone } from "lucide-react";
 const MobileFooter = () => {
   return (
     <div className="flex flex-col text-sm gap-4 pb-20">
-      <div className="flex flex-col items-center gap-2 border-b  border-black pb-4">
+      <div className="flex flex-col min-w-full items-center gap-2 border-b border-black pb-4 lg:flex-row lg:justify-between">
         <Image src={Logo} className="w-40" />
-        <button className="bg-yellow-500 rounded-2xl p-2 font-semibold">
+        <button className="bg-yellow-500 rounded-2xl p-2 font-semibold hover:opacity-80">
           Solicite um orçamento
         </button>
       </div>
 
-      <div className="flex-col-gap-2">
-        <span className="flex-col-gap-2">
+      <div className="flex-col-gap-2 lg:grid lg:grid-cols-2 xl:grid-cols-4 xl:gap-20">
+        <span className="flex-col-gap-2 ">
           <p className="font-semibold">Moacyr Contabilidade</p>
           <p className="">
             Almejamos impactar positivamente a vida dos nossos clientes,
@@ -26,7 +26,7 @@ const MobileFooter = () => {
           </p>
         </span>
 
-        <span className="flex-col-gap-2">
+        <span className="flex-col-gap-2 ">
           <p className="font-semibold">Navegação</p>
           <ul className="flex flex-col min-w-full">
             <Link href={"/"} className="">
@@ -58,7 +58,7 @@ const MobileFooter = () => {
           </div>
         </span>
 
-        <span>
+        <span className="">
           <p className="font-semibold">Como nos achar</p>
           <span className="footer-icons">
             <MapPin width={15} />
@@ -81,6 +81,10 @@ const MobileFooter = () => {
           </span>
         </span>
       </div>
+
+      <p className="text-center">
+        © 2024 Moacyr Gasparini. Todos os direitos reservados.
+      </p>
     </div>
   );
 };
