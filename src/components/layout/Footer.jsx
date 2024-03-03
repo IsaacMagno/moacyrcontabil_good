@@ -5,8 +5,9 @@ import Image from "next/image";
 import Logo from "/public/logo_gasparini.png";
 
 import { AlarmClockCheck, Mail, MapPin, Phone } from "lucide-react";
+import { navbarButtonList } from "@/helpers/navBarButtonText";
 
-const MobileFooter = () => {
+const Footer = () => {
   return (
     <div className="flex flex-col text-sm gap-4 pb-20">
       <div className="flex flex-col min-w-full items-center gap-2 border-b border-black pb-4 lg:flex-row lg:justify-between">
@@ -16,7 +17,7 @@ const MobileFooter = () => {
         </button>
       </div>
 
-      <div className="flex-col-gap-2 lg:grid lg:grid-cols-2 xl:grid-cols-4 xl:gap-20">
+      <div className="flex-col-gap-2 lg:grid lg:grid-cols-2 lg:px-20 lg:gap-10 xl:grid-cols-4 xl:gap-20">
         <span className="flex-col-gap-2 ">
           <p className="font-semibold">Moacyr Contabilidade</p>
           <p className="">
@@ -29,24 +30,11 @@ const MobileFooter = () => {
         <span className="flex-col-gap-2 ">
           <p className="font-semibold">Navegação</p>
           <ul className="flex flex-col min-w-full">
-            <Link href={"/"} className="">
-              <li className="">Área do cliente</li>
-            </Link>
-            <Link href={"/"} className="">
-              <li className="">Institucional</li>
-            </Link>
-            <Link href={"/"} className="">
-              <li className="">Serviços</li>
-            </Link>
-            <Link href={"/"} className="">
-              <li className="">Contato</li>
-            </Link>
-            <Link href={"/"} className="">
-              <li className="">Sites</li>
-            </Link>
-            <Link href={"/"} className="">
-              <li className="">Planilhas</li>
-            </Link>
+            {navbarButtonList.map((button, index) => (
+              <Link href={button[index][1]} className="">
+                <li className="">{button[index][0]}</li>
+              </Link>
+            ))}
           </ul>
         </span>
 
@@ -89,4 +77,4 @@ const MobileFooter = () => {
   );
 };
 
-export default MobileFooter;
+export default Footer;

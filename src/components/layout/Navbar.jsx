@@ -8,6 +8,7 @@ import Logo from "/public/logo_gasparini.png";
 import WhatsAPP from "/public/logo_whatsapp.svg";
 
 import { Menu, X, Instagram, Mail, Phone } from "lucide-react";
+import { navbarButtonList } from "@/helpers/navBarButtonText";
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -43,24 +44,11 @@ const Navbar = () => {
               onClick={handleShowMenu}
             />
             <ul className="flex flex-col min-w-full">
-              <Link href={"/"} className="mobile-sidebar-link">
-                <li className="mobile-sidebar">Área do cliente</li>
-              </Link>
-              <Link href={"/"} className="mobile-sidebar-link">
-                <li className="mobile-sidebar">Institucional</li>
-              </Link>
-              <Link href={"/"} className="mobile-sidebar-link">
-                <li className="mobile-sidebar">Serviços</li>
-              </Link>
-              <Link href={"/"} className="mobile-sidebar-link">
-                <li className="mobile-sidebar">Contato</li>
-              </Link>
-              <Link href={"/"} className="mobile-sidebar-link">
-                <li className="mobile-sidebar">Sites</li>
-              </Link>
-              <Link href={"/"} className="mobile-sidebar-link">
-                <li className="mobile-sidebar">Planilhas</li>
-              </Link>
+              {navbarButtonList.map((button, index) => (
+                <Link href={button[index][1]} className="mobile-sidebar-link">
+                  <li className="mobile-sidebar">{button[index][0]}</li>
+                </Link>
+              ))}
             </ul>
           </div>
         </div>
@@ -111,14 +99,29 @@ const Navbar = () => {
         <div className="min-h-screen bg-black absolute top-0 z-50"> </div>
       ) : null}
       <div className="flex justify-between py-4 ">
-        <Image src={Logo} className="w-[7rem]" />
+        <Image
+          src={Logo}
+          className="w-[7rem] lg:w-[10rem] xl:w-[13rem] 2xl:w-[17rem]"
+        />
 
         <div className="block lg:hidden">
           <Menu onClick={handleShowMenu} className="navbar-contact-buttons" />
         </div>
+        <ul className="hidden lg:flex gap-4">
+          {navbarButtonList.map((button, index) => (
+            <Link
+              href={button[index][1]}
+              className="p-3 hover:opacity-80 2xl:text-xl"
+            >
+              <li className="">{button[index][0]}</li>
+            </Link>
+          ))}
+        </ul>
       </div>
     </div>
   );
 };
 
 export default Navbar;
+// mobile-sidebar-link
+// mobile-sidebar

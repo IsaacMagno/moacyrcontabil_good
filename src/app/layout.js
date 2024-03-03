@@ -1,7 +1,7 @@
 import "./globals.css";
 
-import Navbar from "@/components/layout/MobileNavbar";
-import Footer from "@/components/layout/MobileFooter";
+import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 
 export const metadata = {
   title: "Moacyr Contabilidade",
