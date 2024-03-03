@@ -1,3 +1,10 @@
+/**
+ * @param {string} props.name - O texto do botão.
+ * @param {string} props.href - O URL para o qual o botão direciona.
+ * @param {string} [props.icon] - O ícone opcional para ser exibido ao lado do texto do botão.
+ * @param {boolean} [props.wppButton] - Define se o botão é específico para WhatsApp.
+ */
+
 const LinkButton = ({ name, href, icon, wppButton }) => {
   return (
     <a
