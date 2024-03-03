@@ -64,3 +64,92 @@ body {
 .footer-icons {
   @apply flex items-center gap-4;
 }
+
+strong,
+mark,
+h1,
+h2,
+h3,
+a,
+p,
+small {
+  font-style: normal;
+  line-height: normal;
+  color: #323231;
+}
+
+strong {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+mark {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: transparent;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h2,
+h3,
+a {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+small {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+hr {
+  height: 2px;
+}
+
+@media screen and (min-width: 64rem) {
+  strong {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  mark {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
+  h2,
+  {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  h3,
+  a {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  small {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+}
