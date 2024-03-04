@@ -117,7 +117,7 @@ hr {
   height: 2px;
 }
 
-@media screen and (min-width: 65rem) {
+@media screen and (min-width: 90rem) {
   strong {
     font-size: 2.5rem;
     font-weight: 400;
