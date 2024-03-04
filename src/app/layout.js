@@ -1,7 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/MobileNavbar";
-import Footer from "@/components/layout/MobileFooter";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import ContactBar from "@/components/layout/ContactBar";
 
 const montserrat = Montserrat({
@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
         <div className="hidden lg:block">
           <ContactBar />
         </div>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
