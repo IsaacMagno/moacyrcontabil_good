@@ -1,24 +1,19 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/MobileNavbar";
+import Footer from "@/components/layout/MobileFooter";
 import LinkButton from "@/components/layout/LinkButton";
 import { WhatsappIcon } from "@/components/svgs";
 import { Attach } from "@/components/svgs";
 import Input from "@/components/layout/Input";
+import Textarea from "@/components/layout/Textarea";
+import Dropdown from "@/components/layout/Dropdown";
 import ContactBar from "@/components/layout/ContactBar";
-
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
 });
-
-export const metadata = {
-  title: "Moacyr Contabilidade",
-  description: "Contabilidade",
-};
 
 export default function RootLayout({ children }) {
   return (
@@ -32,10 +27,9 @@ export default function RootLayout({ children }) {
         <LinkButton name="Padrão" />
         <LinkButton icon={<WhatsappIcon />} wppButton name="Whatsapp" />
         <LinkButton icon={<Attach />} name="Anexo" />
-        <Input placeholder="Padrão" />
-        <Input placeholder="Textarea" type="textarea" />
-        <Input placeholder="Dropdown" options={["A", "B", "C"]} type="dropdown" />
-
+        <Input placeholder="Padrão" type="text" />
+        <Textarea placeholder="Textarea" />
+        <Dropdown placeholder="Dropdown" values={["A", "B", "C"]} />
         {/* <LinkButton name="Testando um dois tres" />
         <LinkButton
           icon={<WhatsappIcon />}
