@@ -49,12 +49,12 @@ body {
   @apply flex flex-col gap-2;
 }
 
-.navbar-contact-buttons {
-  @apply font-bold opacity-50 hover:opacity-100 cursor-pointer text-[0.60rem];
+.navbar-contact-buttons-hover {
+  @apply opacity-50 hover:opacity-100 cursor-pointer;
 }
 
 .mobile-sidebar {
-  @apply flex gap-3 items-center justify-center p-3 bg-zinc-300 hover:bg-zinc-500 flex-grow rounded font-semibold;
+  @apply flex gap-3 items-center justify-center p-3 bg-zinc-300 hover:opacity-80 flex-grow rounded font-semibold;
 }
 
 .mobile-sidebar-link {
@@ -115,7 +115,7 @@ hr {
   height: 2px;
 }
 
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 65rem) {
   strong {
     font-size: 2.5rem;
     font-weight: 400;
@@ -131,8 +131,7 @@ hr {
     font-weight: 600;
   }
 
-  h2
-  {
+  h2 {
     font-size: 1.5rem;
     font-weight: 600;
   }
