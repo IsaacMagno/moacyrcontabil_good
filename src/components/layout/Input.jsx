@@ -10,7 +10,7 @@ const Input = ({ placeholder, type, value, onChange }) => {
     <input
       type={type}
       placeholder={placeholder}
-      className="w-full p-2 rounded-lg lg:px-4 lg:py-3"
+      className="w-full p-2 rounded-lg lmd:px-4 lmd:py-3"
       value={value}
       onChange={onChange}
     />

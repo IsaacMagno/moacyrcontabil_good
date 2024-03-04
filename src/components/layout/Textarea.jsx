@@ -8,7 +8,7 @@ const Textarea = ({ placeholder, value, onChange }) => {
   return (
     <textarea
       placeholder={placeholder}
-      className="w-full p-2 rounded-lg lg:px-4 lg:py-3"
+      className="w-full h-full p-2 rounded-lg lg:px-4 lg:py-3"
       value={value}
       onChange={onChange}
     />
