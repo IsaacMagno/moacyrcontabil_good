@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <div className="hidden lg:block">
           <ContactBar />
         </div>
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
         {/* <Footer /> */}
       </body>
