@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: {
         "banner-mobile": "url('../../public/banner mobile.png')",
         "banner-contact": "url('../../public/banner contact.png')",
+        "banner-service": "url('../../public/banner service.png')",
       },
     },
     screens: {
