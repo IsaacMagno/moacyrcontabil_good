@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "banner-mobile": "url('../../public/banner mobile.png')",
-        "banner-service": "url('../../public/banner services.png')",
+        "banner-contact": "url('../../public/banner contact.png')",
       },
     },
     screens: {
