@@ -1,11 +1,11 @@
-import BannerServiceSection from "./bannerServiceSection";
+import BannerContactSection from "./bannerContactSection";
 import ContactDoubtSection from "./contactDoubtSection";
 import LocationSection from "./locationSection";
 
-export default function Servicos() {
+export default function Contato() {
   return (
     <main className="h-full">
-      <BannerServiceSection />
+      <BannerContactSection />
       <ContactDoubtSection />
       <LocationSection />
     </main>
