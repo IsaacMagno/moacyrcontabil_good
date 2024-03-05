@@ -1,3 +1,9 @@
+/**
+ * @param {JSX.Element} props.icon - The icon to be displayed alongside the title.
+ * @param {string} props.title - The title of the topic.
+ * @param {string} props.text - The text content of the topic.
+ */
+
 const Topic = ({ icon, title, text }) => {
   return (
     <article className="flex flex-col items-start gap-2">
