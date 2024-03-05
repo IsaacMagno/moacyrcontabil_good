@@ -4,3 +4,5 @@ export { default as Clipboard } from "./Clipboard.svg";
 export { default as LocationIcon } from "./LocationIcon.svg";
 export { default as PhoneIcon } from "./PhoneIcon.svg";
 export { default as ClockIcon } from "./ClockIcon.svg";
+export { default as LightbulbIcon } from "./LightbulbIcon.svg";
+export { default as ClipboardPlusIcon } from "./ClipboardPlusIcon.svg";
