@@ -4,11 +4,13 @@
  * @param {string} [props.icon] - O ícone opcional para ser exibido ao lado do texto do botão.
  * @param {boolean} [props.hasBorder] - Define se o botão tem borda.
  * @param {boolean} [props.wppButton] - Define se o botão é específico para WhatsApp.
+ * @param {function} [props.onClick] - Define a função que será chamada ao clicar.
  */
 
-const LinkButton = ({ name, href, icon, wppButton, hasBorder }) => {
+const LinkButton = ({ name, href, icon, wppButton, hasBorder, onClick }) => {
   return (
     <a
+      onClick={onClick}
       href={href}
       className={`${
         !wppButton
