@@ -18,7 +18,7 @@ const DreamSection = () => {
         </p>
       </article>
       <div className="relative w-full h-full lg:w-[32rem] lmd:w-[45rem] xlg:w-[60rem] ">
-        <Image src={"/happy people.png"} fill />
+        <Image src={"/happy people.png"} alt="Grupo de pessoas felizes" fill />
       </div>
     </section>
   );

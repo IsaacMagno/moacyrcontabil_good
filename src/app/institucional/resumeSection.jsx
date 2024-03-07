@@ -16,7 +16,7 @@ const ResumeSection = () => {
         <ResumeForm />
       </article>
       <div className="hidden lmd:block relative rounded-xl w-[45rem] h-[60rem] overflow-hidden">
-        <Image src={"/meeting.png"} fill />
+        <Image src={"/meeting.png"} alt="Quatro pessoas pegando na mão uma da outra fazendo um quadrado" fill />
       </div>
     </section>
   );

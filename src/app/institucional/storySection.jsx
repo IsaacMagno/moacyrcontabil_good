@@ -4,7 +4,7 @@ const StorySection = () => {
   return (
     <section className="flex flex-col w-full px-4 py-6 items-center gap-6 bg-[#E9E9E9] lg:flex-row-reverse lg:justify-between lg:px-20 lg:py-16 lg:gap-32 lmd:py-32 lmd:gap-[11rem] xlg:px-[16rem] xlg:py-[11.5rem] xlg:gap-[11.5rem] h-full">
       <div className="relative w-[18rem] h-[18rem] lmd:w-[31rem] lmd:h-[31rem]">
-        <Image src={"/office.png"} fill />
+        <Image src={"/office.png"} alt="Fachada do escritório" fill />
       </div>
       <section className="flex flex-col gap-6 lg:items-start">
         <article className="flex flex-col items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">

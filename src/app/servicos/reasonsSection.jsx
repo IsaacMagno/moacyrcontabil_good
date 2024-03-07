@@ -29,7 +29,7 @@ const ReasonsSection = () => {
         </section>
       </article>
       <div className="relative w-full h-[21.75rem] lg:w-[32rem] lg:h-[31rem] lmd:w-[45rem] lmd:h-[43rem] xlg:w-[60rem] xlg:h-[57rem]">
-        <Image src={"/afro man working.png"} fill />
+        <Image src={"/afro man working.png"} alt="Rapaz sorrindo com tablet na mão" fill />
       </div>
     </section>
   );
