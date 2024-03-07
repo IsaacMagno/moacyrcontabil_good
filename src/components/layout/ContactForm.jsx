@@ -58,7 +58,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
   };
 
   return (
-    <form className="flex flex-col p-6 gap-8 rounded-lg bg-[#323231] lmd:p-16 lmd:gap-10 lmd:rounded-3xl">
+    <form className="flex flex-col p-6 gap-8 rounded-lg max-w-[30rem]  lmd:max-w-[40rem] bg-[#323231] lmd:p-16 lmd:gap-10 lmd:rounded-3xl">
       <Input
         type="text"
         placeholder="Digite seu nome"
