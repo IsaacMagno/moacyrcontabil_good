@@ -27,7 +27,7 @@ const BudgetSection = () => {
         onClick={getSelectedGuide}
         selectedGuide={selectedGuide}
       />
-      <section className="flex flex-col items-center gap-6 px-4 pt-6 lg:flex-row lg:py-0 lg:px-20 lg:gap-[8rem] lmd:gap-[11rem] xlg:gap-[14rem]">
+      <section className="flex flex-col items-center gap-6 px-4 pt-6 lg:flex-row lg:py-0 lg:px-20 lg:gap-[8rem]">
         <div className="relative w-[18.5rem] h-[12rem] rounded-lg lg:w-[23rem] lg:h-[14.5rem] lmd:w-[31rem] lmd:h-[19.5rem] xlg:w-[44rem] xlg:h-[28rem]">
           <Image src={"/business man.png"} fill />
         </div>
