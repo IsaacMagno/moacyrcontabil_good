@@ -1,17 +1,17 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-
-import Logo from "/public/logo_gasparini.png";
 
 import { AlarmClockCheck, Mail, MapPin, Phone } from "lucide-react";
 import { navbarButtonList } from "@/helpers/navBarButtonText";
+import { LogoIcon } from "../svgs";
 
 const Footer = () => {
   return (
     <div className="flex flex-col text-sm gap-4 pb-20">
       <div className="flex flex-col min-w-full items-center gap-2 border-b border-black pb-4 lg:flex-row lg:justify-between">
-        <Image src={Logo} className="w-40" />
+        <a href="/inicio">
+          <LogoIcon className="w-36 lg:w-[12rem] lmd:w-[18.3rem]" />
+        </a>
         <button className="bg-yellow-500 rounded-2xl p-2 font-semibold hover:opacity-80">
           Solicite um orçamento
         </button>
@@ -71,7 +71,7 @@ const Footer = () => {
       </div>
 
       <p className="text-center">
-        © 2024 Moacyr Gasparini. Todos os direitos reservados.
+        &copy; 2024 Moacyr Gasparini. Todos os direitos reservados.
       </p>
     </div>
   );

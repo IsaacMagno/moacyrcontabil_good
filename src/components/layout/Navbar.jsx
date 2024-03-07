@@ -1,12 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { CSSTransition } from "react-transition-group";
-
-import Logo from "/public/logo_gasparini.png";
-
 import { Menu, X } from "lucide-react";
 import { navbarButtonList } from "@/helpers/navBarButtonText";
 import { LogoIcon } from "../svgs";
