@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PeopleOnCelphone from "@/../../public/people on cellphone.png";
 
 const ServiceSection = () => {
   return (
@@ -17,7 +18,13 @@ const ServiceSection = () => {
         </h2>
       </article>
       <div className="relative w-[18.5rem] h-[18rem] lmd:w-[28rem] lmd:h-[28rem] xlg:w-[43rem] xlg:h-[43rem]">
-        <Image src={"/people on cellphone.png"} alt="Pessoas no celular" fill />
+        <Image
+          src={PeopleOnCelphone}
+          alt="Pessoas no celular"
+          placeholder="blur"
+          sizes="(max-width: 1024px) 384px, (max-width: 1440px) 640px"
+          fill
+        />
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
+import Image from "next/image";
+import AfroManWorking from "@/../../public/afro man working.png";
 import Topic from "@/components/layout/Topic";
 import { ClipboardPlusIcon, LightbulbIcon } from "@/components/svgs";
-import Image from "next/image";
 
 const ReasonsSection = () => {
   return (
@@ -29,7 +30,13 @@ const ReasonsSection = () => {
         </section>
       </article>
       <div className="relative w-full h-[21.75rem] lg:w-[32rem] lg:h-[31rem] lmd:w-[45rem] lmd:h-[43rem] xlg:w-[60rem] xlg:h-[57rem]">
-        <Image src={"/afro man working.png"} alt="Rapaz sorrindo com tablet na mão" fill />
+        <Image
+          src={AfroManWorking}
+          alt="Rapaz sorrindo com tablet na mão"
+          placeholder="blur"
+          sizes="(max-width: 360px) 384px, (max-width: 1024px) 512px, (max-width: 1440px) 768px, (max-width: 1920px) 1024px"
+          fill
+        />
       </div>
     </section>
   );

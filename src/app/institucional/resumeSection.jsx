@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Meeting from "@/../../public/meeting.png";
 import ResumeForm from "@/components/layout/ResumeForm";
 
 const ResumeSection = () => {
@@ -16,7 +17,13 @@ const ResumeSection = () => {
         <ResumeForm />
       </article>
       <div className="hidden lmd:block relative rounded-xl w-[45rem] h-[60rem] overflow-hidden">
-        <Image src={"/meeting.png"} alt="Quatro pessoas pegando na mão uma da outra fazendo um quadrado" fill />
+        <Image
+          src={Meeting}
+          alt="Quatro pessoas pegando na mão uma da outra fazendo um quadrado"
+          placeholder="blur"
+          sizes="640px"
+          fill
+        />
       </div>
     </section>
   );

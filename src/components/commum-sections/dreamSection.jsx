@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HappyPeople from "@/../../public/happy people.png";
 
 const DreamSection = () => {
   return (
@@ -18,7 +19,13 @@ const DreamSection = () => {
         </p>
       </article>
       <div className="relative w-full h-full lg:w-[32rem] lmd:w-[45rem] xlg:w-[60rem] ">
-        <Image src={"/happy people.png"} alt="Grupo de pessoas felizes" fill />
+        <Image
+          src={HappyPeople}
+          alt="Grupo de pessoas felizes"
+          placeholder="blur"
+          sizes="(max-width: 360px) 384px, (max-width: 1024px) 512px, (max-width: 1440px) 768px, (max-width: 1920px) 1024px"
+          fill
+        />
       </div>
     </section>
   );

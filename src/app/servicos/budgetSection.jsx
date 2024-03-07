@@ -3,6 +3,7 @@
 import { useState } from "react";
 import LinkButton from "@/components/layout/LinkButton";
 import Image from "next/image";
+import BusinessMan from "@/../../public/business man.png";
 import { budgetTexts } from "@/helpers/budgetTexts";
 import {
   CalculatorIcon,
@@ -29,7 +30,13 @@ const BudgetSection = () => {
       />
       <section className="flex flex-col items-center gap-6 px-4 pt-6 lg:flex-row lg:py-0 lg:px-20 lg:gap-[8rem]">
         <div className="relative w-[18.5rem] h-[12rem] rounded-lg lg:w-[23rem] lg:h-[14.5rem] lmd:w-[31rem] lmd:h-[19.5rem] xlg:w-[44rem] xlg:h-[28rem]">
-          <Image src={"/business man.png"} alt="Senhor sentado numa mesa de escritório" fill />
+          <Image
+            src={BusinessMan}
+            alt="Senhor sentado numa mesa de escritório"
+            placeholder="blur"
+            sizes="(max-width: 1024px) 384px, (max-width: 1440px) 640px"
+            fill
+          />
         </div>
         <article className="flex flex-col items-center gap-6 lg:items-start lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
           <h1>{budgetTexts[selectedGuide].title}</h1>

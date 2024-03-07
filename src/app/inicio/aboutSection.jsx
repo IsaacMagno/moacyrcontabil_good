@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ManWithNotebook from "@/../../public/man with notebook.png";
 
 const AboutSection = () => {
   return (
@@ -19,7 +20,13 @@ const AboutSection = () => {
         </p>
       </article>
       <div className="relative w-[18rem] h-[18rem] lmd:w-[31rem] lmd:h-[31rem]">
-        <Image src={"/man with notebook.png"} alt="Homem segurando notebook" fill />
+        <Image
+          src={ManWithNotebook}
+          alt="Homem segurando notebook"
+          placeholder="blur"
+          sizes="(max-width: 1024px) 384px, (max-width: 1440px) 640px"
+          fill
+        />
       </div>
     </section>
   );
