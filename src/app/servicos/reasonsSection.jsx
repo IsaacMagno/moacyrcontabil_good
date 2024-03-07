@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ReasonsSection = () => {
   return (
-    <section className="flex flex-col w-full pt-6 items-center gap-6 bg-[#E9E9E9] lg:flex-row-reverse lg:justify-between lg:pr-20 lg:pt-0 xlg:pr-32">
+    <section className="flex flex-col w-full pt-6 items-center gap-6 bg-[#E9E9E9] lg:flex-row-reverse lg:justify-between lg:pr-20 lg:pt-0 xlg:pr-32 h-full">
       <article className="flex flex-col w-[20.5rem] items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
         <section>
           <strong className="text-[#323231]">Motivos para escolher </strong>

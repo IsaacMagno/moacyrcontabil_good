@@ -1,3 +1,4 @@
+"use client";
 import ContactSection from "@/components/commum-sections/contactSection";
 import BannerServicesSection from "./bannerServicesSection";
 import DreamSection from "@/components/commum-sections/dreamSection";

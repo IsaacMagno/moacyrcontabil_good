@@ -25,6 +25,16 @@ body {
   background: #d1d5db;
 }
 
+.div-losango {
+  background-color: #4caf50;
+  transform: rotate(45deg);
+}
+
+.div-image {
+  background-color: #4caf50;
+  transform: rotate(-45deg);
+}
+
 /* Animações para menu-secondary */
 .menu-secondary-enter {
   opacity: 0;

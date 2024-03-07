@@ -60,17 +60,19 @@ const Navbar = () => {
         <div className="min-h-screen bg-black absolute top-0 z-50"> </div>
       ) : null}
       <div className="flex justify-between py-4 items-center">
-        <Image
-          src={Logo}
-          className="w-[7rem] lg:w-[12rem] xl:w-[13rem] 2xl:w-[17rem]"
-        />
+        <Link href={"/inicio"} className="cursor-pointer">
+          <Image
+            src={Logo}
+            className="w-[7rem] lg:w-[12rem] xl:w-[13rem] 2xl:w-[17rem] "
+          />
+        </Link>
 
         <div className="block lg:hidden">
           <Menu onClick={handleShowMenu} className="navbar-contact-buttons" />
         </div>
         <ul className="hidden lg:flex gap-4">
           {navbarButtonList.map((button, index) => (
-            <Link href={button[index][1]} className="">
+            <Link href={button[index][1]}>
               <li className="hover:opacity-80">
                 <h2>{button[index][0]}</h2>
               </li>

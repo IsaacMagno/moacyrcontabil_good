@@ -4,7 +4,7 @@ const LocationSection = () => {
   const location =
     "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14718.338460768553!2d-46.898004!3d-22.7436757!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8dea17d4ac493%3A0x1d5e7860955bf9aa!2sGasparini%20Contabilidade%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1709588448952!5m2!1spt-BR!2sbr";
   return (
-    <section className="flex flex-col w-full px-4 py-6 items-start gap-6 bg-[#323231] lg:px-20 lg:py-16 lg:gap-6 lmd:py-32 lmd:gap-10 xlg:px-32 xlg:py-[11.5rem]">
+    <section className="flex flex-col w-full px-4 py-6 items-start gap-6 bg-[#323231] lg:px-20 lg:py-16 lg:gap-6 lmd:py-32 lmd:gap-10 xlg:px-32 xlg:py-[11.5rem] h-full">
       <section>
         <strong className="text-[#F6BE25]">
           Explore soluções contábeis personalizadas para o seu negócio!
