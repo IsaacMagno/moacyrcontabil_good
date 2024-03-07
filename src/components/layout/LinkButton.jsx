@@ -18,7 +18,7 @@ const LinkButton = ({ name, href, icon, wppButton, hasBorder, onClick }) => {
               hasBorder ? "hover:border hover:border-[#F6BE25]" : null
             }`
           : "bg-[#24B600] hover:text-[#24B600] flex-row-reverse"
-      } inline-flex justify-center items-center border border-transparent rounded-3xl py-2 px-4 gap-2 hover:bg-[#323231] cursor-pointer lmd:p-4`}
+      } inline-flex justify-center items-center border border-transparent rounded-3xl py-2 px-4 gap-2 hover:bg-[#323231] cursor-pointer lmd:p-3`}
     >
       {name}
       {icon ? <div className="w-4 lg:w-6">{icon}</div> : null}
