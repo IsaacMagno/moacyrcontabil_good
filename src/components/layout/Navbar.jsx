@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -83,5 +84,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// mobile-sidebar-link
-// mobile-sidebar
