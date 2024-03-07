@@ -4,23 +4,24 @@
  */
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Input from "./Input";
 import Textarea from "./Textarea";
 import LinkButton from "./LinkButton";
 import { validateEmail } from "@/app/utils/validateEmail";
 
 const ContactForm = ({ hasMessage, buttonName }) => {
-  const [formData, setFormData] = useState({
-    name: "",
+  const defaultData = {
     email: "",
+    name: "",
     phone: "",
     message: "",
     agree: false,
-  });
-
+  };
+  const [formData, setFormData] = useState(defaultData);
   const [error, setError] = useState({
     email: "",
+    fields: "",
   });
 
   const handleChange = (e) => {
@@ -40,7 +41,20 @@ const ContactForm = ({ hasMessage, buttonName }) => {
   };
 
   const handleClick = () => {
+    const requiredFields = ["name", "email", "phone"];
+    const isFormValid = requiredFields.every((field) => formData[field]);
+    const isValidEmail = validateEmail(formData.email);
+
+    if (!isFormValid || !isValidEmail) {
+      setError((prevError) => ({
+        ...prevError,
+        fields: "Por favor, preencha todos os campos corretamente.",
+      }));
+      return;
+    }
     console.log(formData);
+    setFormData(defaultData);
+    setError({ email: "" });
   };
 
   return (
@@ -52,7 +66,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
         value={formData.name}
         onChange={handleChange}
       />
-      <div>
+      <div className="flex flex-col">
         <Input
           type="email"
           placeholder="exemplo@exemplo.com.br"
@@ -60,7 +74,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
           value={formData.email}
           onChange={handleChange}
         />
-        <small className="text-red-400">{error.email}</small>
+        <small className="text-red-400 pt-2 mb-[-0.5rem]">{error.email}</small>
       </div>
       <Input
         type="tel"
@@ -79,6 +93,9 @@ const ContactForm = ({ hasMessage, buttonName }) => {
           />
         </div>
       ) : null}
+      <small className="text-white mt-[-2rem] mb-[-1rem]">
+        (Todos campos são obrigatórios.)
+      </small>
       <div className="flex gap-2 items-center">
         <div>
           <Input
@@ -94,7 +111,10 @@ const ContactForm = ({ hasMessage, buttonName }) => {
           de Dados
         </small>
       </div>
-      <LinkButton onClick={handleClick} name={buttonName} hasBorder />
+      <div className="flex flex-col w-full gap-2">
+        <LinkButton onClick={handleClick} name={buttonName} hasBorder />
+        <small className="text-red-400">{error.fields}</small>
+      </div>
     </form>
   );
 };

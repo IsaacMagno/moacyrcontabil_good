@@ -10,7 +10,7 @@ const Textarea = ({ placeholder, value, onChange, name }) => {
     <textarea
       placeholder={placeholder}
       name={name}
-      className="w-full h-full p-2 rounded-lg lg:px-4 lg:py-3"
+      className="w-full h-full p-2 rounded-lg lmd:px-4 lmd:py-3"
       value={value}
       onChange={onChange}
     />
