@@ -93,7 +93,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
           />
         </div>
       ) : null}
-      <small className="text-white mt-[-2rem] mb-[-1rem]">
+      <small className="text-white mt-[-1.5rem] mb-[-1rem]">
         (Todos campos são obrigatórios.)
       </small>
       <div className="flex gap-2 items-center">

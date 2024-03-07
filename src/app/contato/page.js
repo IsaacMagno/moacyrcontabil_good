@@ -5,9 +5,9 @@ import LocationSection from "./locationSection";
 export default function Contato() {
   return (
     <main className="h-full">
-      {/* <BannerContactSection />
+      <BannerContactSection />
       <ContactDoubtSection />
-      <LocationSection /> */}
+      <LocationSection />
     </main>
   );
 }

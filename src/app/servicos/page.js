@@ -7,11 +7,11 @@ import BudgetSection from "./budgetSection";
 export default function Servicos() {
   return (
     <main className="h-full">
-      {/* <BannerServicesSection />
+      <BannerServicesSection />
       <BudgetSection />
       <ContactSection />
       <DreamSection />
-      <ReasonsSection /> */}
+      <ReasonsSection />
     </main>
   );
 }

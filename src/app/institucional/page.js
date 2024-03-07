@@ -5,9 +5,9 @@ import StorySection from "./storySection";
 export default function Institucional() {
   return (
     <main className="h-full">
-      {/* <BannerAboutSection />
+      <BannerAboutSection />
       <StorySection />
-      <ResumeSection /> */}
+      <ResumeSection />
     </main>
   );
 }
