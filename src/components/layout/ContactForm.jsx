@@ -41,7 +41,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
   };
 
   const handleClick = () => {
-    const requiredFields = ["name", "email", "phone"];
+    const requiredFields = Object.keys(defaultData);
     const isFormValid = requiredFields.every((field) => formData[field]);
     const isValidEmail = validateEmail(formData.email);
 
@@ -52,7 +52,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
       }));
       return;
     }
-    console.log(formData);
+    console.log(formData); // AQUI VAI A FUNCAO PARA COLOCAR OS DADOS EM ALGUM LUGAR
     setFormData(defaultData);
     setError({ email: "" });
   };

@@ -7,6 +7,7 @@ import LinkButton from "./LinkButton";
 import Dropdown from "./Dropdown";
 import { Attach } from "../svgs";
 import { validateEmail } from "@/app/utils/validateEmail";
+import FileButton from "./FileButton";
 
 const ResumeForm = () => {
   const values = ["Trabalhista", "Fiscal", "Contábil", "Auxiliar"];
@@ -24,6 +25,7 @@ const ResumeForm = () => {
     practicesComment: "",
     role: "",
     about: "",
+    file: null,
   };
   const [formData, setFormData] = useState(defaultData);
   const [error, setError] = useState({
@@ -47,22 +49,15 @@ const ResumeForm = () => {
     }
   };
 
+  const handleFileChange = (file) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      file: file,
+    }));
+  };
+
   const handleClick = () => {
-    const requiredFields = [
-      "name",
-      "email",
-      "address",
-      "city",
-      "maritalStatus",
-      "age",
-      "numberChildren",
-      "phone",
-      "technicalFormation",
-      "higherEducation",
-      "practicesComment",
-      "role",
-      "about",
-    ];
+    const requiredFields = Object.keys(defaultData);
     const isFormValid = requiredFields.every((field) => formData[field]);
     const isValidEmail = validateEmail(formData.email);
 
@@ -74,20 +69,22 @@ const ResumeForm = () => {
       return;
     }
 
-    console.log(formData);
+    console.log(formData); // AQUI VAI A FUNCAO PARA COLOCAR OS DADOS EM ALGUM LUGAR
     setFormData(defaultData);
     setError({ email: "", fields: "" });
   };
 
   return (
     <form className="flex flex-col gap-6 rounded-lg bg-[#323231] lmd:w-full">
-      <section className="flex flex-col gap-2 items-start w-28">
+      <section className="flex flex-col gap-2 items-start w-full">
         <p className="text-white">Currículo (formato.pdf)</p>
-        <LinkButton name="Anexar" icon={<Attach />} hasBorder />
+        <FileButton onChange={handleFileChange} />
       </section>
       <section className="flex flex-col gap-6 w-[20.5rem] lg:w-[54rem] lmd:w-full">
         <p className="text-white mb-[-1rem]">Dados pessoais:</p>
-        <small className="text-white mt-[-0.5rem]">(Todos campos são obrigatórios.)</small>
+        <small className="text-white mt-[-0.5rem]">
+          (Todos campos são obrigatórios.)
+        </small>
         <Input
           name="name"
           value={formData.name}
@@ -132,7 +129,7 @@ const ResumeForm = () => {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div className="flex flex-col gap-2">
           <Input
             name="email"
             value={formData.email}
@@ -140,7 +137,7 @@ const ResumeForm = () => {
             placeholder="Email"
             onChange={handleChange}
           />
-          <small className="text-red-400">{error.email}</small>
+          <small className="text-red-400 mb-[-0.5rem]">{error.email}</small>
         </div>
 
         <div className="w-[13rem]">
