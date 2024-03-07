@@ -10,3 +10,4 @@ export { default as CalculatorIcon } from "./CalculatorIcon.svg";
 export { default as BalanceIcon } from "./BalanceIcon.svg";
 export { default as SheetIcon } from "./SheetIcon.svg";
 export { default as CompanyIcon } from "./CompanyIcon.svg";
+export { default as LogoIcon } from "./LogoIcon.svg";

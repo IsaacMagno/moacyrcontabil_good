@@ -7,7 +7,7 @@ import { WhatsappIcon } from "../svgs";
 
 const ContactBar = () => {
   return (
-    <div className="flex min-w-full justify-between py-2 px-8 border-b border-[#AEAEAE] text-xs lg:text-base items-center">
+    <div className="flex min-w-full bg-[#E9E9E9] justify-between py-2 px-8 border-b border-[#cbcbcb] items-center">
       <div className="flex lg:gap-8 lmd:gap-16 ">
         <span className="flex items-center gap-1 group">
           <Mail className="w-4 mt-1 group-hover:text-[#6f6f6f]" />
