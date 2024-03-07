@@ -4,11 +4,13 @@
  * @param {string} [props.icon] - O ícone opcional para ser exibido ao lado do texto do botão.
  * @param {boolean} [props.hasBorder] - Define se o botão tem borda.
  * @param {boolean} [props.wppButton] - Define se o botão é específico para WhatsApp.
+ * @param {function} [props.onClick] - Define a função que será chamada ao clicar.
  */
 
-const LinkButton = ({ name, href, icon, wppButton, hasBorder }) => {
+const LinkButton = ({ name, href, icon, wppButton, hasBorder, onClick }) => {
   return (
     <a
+      onClick={onClick}
       href={href}
       className={`${
         !wppButton
@@ -16,7 +18,7 @@ const LinkButton = ({ name, href, icon, wppButton, hasBorder }) => {
               hasBorder ? "hover:border hover:border-[#F6BE25]" : null
             }`
           : "bg-[#24B600] hover:text-[#24B600] flex-row-reverse"
-      } inline-flex justify-center items-center border border-transparent rounded-3xl py-2 px-4 gap-2 hover:bg-[#323231] cursor-pointer lmd:p-4`}
+      } inline-flex justify-center items-center border border-transparent rounded-3xl py-2 px-4 gap-2 hover:bg-[#323231] cursor-pointer lmd:p-3`}
     >
       {name}
       {icon ? <div className="w-4 lg:w-6">{icon}</div> : null}

@@ -13,6 +13,7 @@ module.exports = {
         "banner-service": "url('../../public/banner service.png')",
         "carousel-one": "url('/public/carousel/slide1.jpeg'",
         detalhe: "url('/public/detalhe_bg.png'",
+        "banner-about": "url('../../public/banner about.png')",
       },
     },
     screens: {

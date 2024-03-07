@@ -5,10 +5,15 @@
  * @param {function} props.onChange - A função a ser chamada quando a opção selecionada é alterada.
  */
 
-const Dropdown = ({ placeholder, values, value, onChange }) => {
+const Dropdown = ({ placeholder, values, value, onChange, name }) => {
   return (
-    <select className="w-full p-2 rounded-lg lg:px-4 lg:py-3" value={value} onChange={onChange}>
-      <option disabled selected>
+    <select
+      name={name}
+      className="w-full p-2 rounded-lg"
+      value={value || placeholder}
+      onChange={onChange}
+    >
+      <option disabled>
         {placeholder}
       </option>
       {values.map((value) => (
