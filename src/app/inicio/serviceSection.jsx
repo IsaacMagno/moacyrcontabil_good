@@ -16,8 +16,8 @@ const ServiceSection = () => {
           cliente.
         </h2>
       </article>
-      <div className="relative w-[18.5rem] h-64 lmd:w-[28rem] lmd:h-[24.5rem] xlg:w-[43rem] xlg:h-[37rem]">
-        <Image src={"/people on phone.png"} fill />
+      <div className="relative w-[18.5rem] h-[18rem] lmd:w-[28rem] lmd:h-[28rem] xlg:w-[43rem] xlg:h-[43rem]">
+        <Image src={"/people on cellphone.png"} fill />
       </div>
     </section>
   );
