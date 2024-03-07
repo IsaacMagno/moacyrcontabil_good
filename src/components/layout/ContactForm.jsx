@@ -84,7 +84,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
         onChange={handleChange}
       />
       {hasMessage ? (
-        <div className="h-[4.5rem] lmd:h-[11rem]">
+        <div className="h-[4.5rem] lmd:h-[8rem]">
           <Textarea
             placeholder="Digite sua mensagem"
             name="message"
