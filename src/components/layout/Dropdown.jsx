@@ -10,10 +10,10 @@ const Dropdown = ({ placeholder, values, value, onChange, name }) => {
     <select
       name={name}
       className="w-full p-2 rounded-lg"
-      value={placeholder}
+      value={value || placeholder}
       onChange={onChange}
     >
-      <option disabled selected>
+      <option disabled>
         {placeholder}
       </option>
       {values.map((value) => (
