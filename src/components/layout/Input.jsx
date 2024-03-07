@@ -8,7 +8,7 @@
  */
 
 import React from "react";
-import InputMask from "react-input-mask";
+import InputMask from "@mona-health/react-input-mask";
 
 const Input = ({ placeholder, type, name, value, checked, onChange }) => {
   const mask = type === "tel" ? "(99) 9999 9999" : undefined;
@@ -17,7 +17,6 @@ const Input = ({ placeholder, type, name, value, checked, onChange }) => {
   return (
     <InputMask
       mask={mask}
-      maskChar={maskChar}
       type={type}
       name={name}
       placeholder={placeholder}

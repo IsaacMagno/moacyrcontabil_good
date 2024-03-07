@@ -58,7 +58,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
   };
 
   return (
-    <form className="flex flex-col p-6 gap-8 rounded-lg bg-[#323231] lmd:p-16 lmd:gap-10 lmd:rounded-3xl">
+    <form className="flex flex-col p-6 gap-8 rounded-lg max-w-[25rem] bg-[#323231] lmd:p-10 lmd:gap-10 lg:rounded-3xl">
       <Input
         type="text"
         placeholder="Digite seu nome"
@@ -84,7 +84,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
         onChange={handleChange}
       />
       {hasMessage ? (
-        <div className="h-[4.5rem] lmd:h-[11rem]">
+        <div className="h-[4.5rem] lmd:h-[8rem]">
           <Textarea
             placeholder="Digite sua mensagem"
             name="message"
@@ -93,7 +93,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
           />
         </div>
       ) : null}
-      <small className="text-white mt-[-2rem] mb-[-1rem]">
+      <small className="text-white mt-[-1.5rem] mb-[-1rem]">
         (Todos campos são obrigatórios.)
       </small>
       <div className="flex gap-2 items-center">
