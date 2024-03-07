@@ -11,6 +11,7 @@ module.exports = {
         "banner-mobile": "url('../../public/banner mobile.png')",
         "banner-contact": "url('../../public/banner contact.png')",
         "banner-service": "url('../../public/banner service.png')",
+        "banner-about": "url('../../public/banner about.png')",
       },
     },
     screens: {
