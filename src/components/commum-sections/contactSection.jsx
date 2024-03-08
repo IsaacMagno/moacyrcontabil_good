@@ -20,6 +20,8 @@ const ContactSection = () => {
         <div className="flex justify-center">
           <LinkButton
             wppButton
+            href="https://api.whatsapp.com/send?phone=551938932236&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20contabilidade."
+            target="_blank"
             icon={<WhatsappIcon />}
             name="Contatar via WhatsApp"
           />
