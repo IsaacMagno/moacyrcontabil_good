@@ -57,7 +57,7 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-2 w-full lg:w-[18.5rem]">
             <h2>Como nos achar</h2>
             <section className="flex items-center gap-2">
-              <span className="w-5 lmd:w-8">
+              <span className="w-5 lg:w-8 lmd:w-16">
                 <LocationIcon />
               </span>
               <div className="flex flex-col items-start">
@@ -84,11 +84,11 @@ const Footer = () => {
               className="flex gap-2 items-center group"
               href="mailto:atendimento01@moacyrcontabil.com.br?subject=Contato Moacyr Contabilidade do E-mail&body=Corpo do E-mail"
             >
-              <Mail className="w-4 group-hover:text-[#6f6f6f]" />
+              <Mail className="w-4 group-hover:text-[#6f6f6f] lmd:w-16 lmd:pr-[2rem]" />
               <small className="group-hover:text-[#6f6f6f] lg:hidden">
                 Email de contato
               </small>
-              <small className="hidden group-hover:text-[#6f6f6f] lg:block">
+              <small className="hidden group-hover:text-[#6f6f6f] lg:block lmd:ml-[-2rem]">
                 atendimento01@moacyrcontabil.com.br
               </small>
             </a>
