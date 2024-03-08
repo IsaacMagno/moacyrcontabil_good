@@ -7,11 +7,12 @@
  * @param {function} [props.onClick] - Define a função que será chamada ao clicar.
  */
 
-const LinkButton = ({ name, href, icon, wppButton, hasBorder, onClick }) => {
+const LinkButton = ({ name, href, icon, wppButton, hasBorder, onClick, target }) => {
   return (
     <a
       onClick={onClick}
       href={href}
+      target={target}
       className={`${
         !wppButton
           ? `bg-[#F6BE25] hover:text-[#F6BE25] ${

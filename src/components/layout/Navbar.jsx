@@ -63,7 +63,7 @@ const Navbar = () => {
       ) : null}
       <div className="flex justify-between items-center">
         <a href="/inicio">
-          <LogoIcon className="w-36 lg:w-[12rem] lmd:w-[18.3rem]" />
+          <LogoIcon className="w-36 lg:w-[12rem] lmd:w-[14rem]" />
         </a>
 
         <div className="block lg:hidden">
