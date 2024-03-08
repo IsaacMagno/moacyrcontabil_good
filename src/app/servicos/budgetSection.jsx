@@ -41,7 +41,11 @@ const BudgetSection = () => {
         <article className="flex flex-col items-center gap-6 lg:items-start lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
           <h1>{budgetTexts[selectedGuide].title}</h1>
           <p>{budgetTexts[selectedGuide].text}</p>
-          <LinkButton name="Solicite um orçamento HOJE" />
+          <LinkButton
+            href="https://api.whatsapp.com/send?phone=551938932236&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20contabilidade."
+            target="_blank"
+            name="Solicite um orçamento HOJE"
+          />
         </article>
       </section>
     </section>
