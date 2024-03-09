@@ -13,7 +13,7 @@ const ContactBar = () => {
           <Mail className="w-4 mt-1 group-hover:text-[#6f6f6f]" />
           <a href="mailto:atendimento01@moacyrcontabil.com.br?subject=Contato Moacyr Contabilidade do E-mail&body=Corpo do E-mail">
             <small className="group-hover:text-[#6f6f6f]">
-              moacyrcontabil.com.br
+              atendimento01@moacyrcontabil.com.br
             </small>
           </a>
         </span>

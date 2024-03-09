@@ -1,80 +1,106 @@
 import React from "react";
 import Link from "next/link";
 
-import { AlarmClockCheck, Mail, MapPin, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { navbarButtonList } from "@/helpers/navBarButtonText";
-import { LogoIcon } from "../svgs";
+import { ClockIcon, LocationIcon, LogoIcon, PhoneIcon } from "../svgs";
 import LinkButton from "./LinkButton";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col text-sm gap-4">
-      <div className="flex flex-col min-w-full items-center gap-2 border-b border-black pb-4 lg:flex-row lg:justify-between px-20 py-4">
-        <Link href="/inicio">
-          <LogoIcon className="w-36 lg:w-[12rem] lmd:w-[18.3rem]" />
-        </Link>
-        <LinkButton name={"Solicite um orçamento"} href="/" />
+    <div className="flex flex-col items-center bg-[#E9E9E9] gap-[0.625rem] py-[1.3125rem] px-8">
+      <div className="flex flex-col items-center justify-center w-full gap-4 py-[0.625rem] lg:flex-row lg:justify-between xlg:px-32">
+        <a href="/inicio">
+          <LogoIcon className="w-36 lmd:w-[14rem]" />
+        </a>
+        <LinkButton
+          href="https://api.whatsapp.com/send?phone=551938932236&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20contabilidade."
+          target="_blank"
+          name="Solicite um orçamento"
+        />
       </div>
 
-      <div className="flex-col-gap-2 lg:grid lg:grid-cols-2 lg:px-20 lg:gap-10 xl:grid-cols-4 xl:gap-20">
-        <span className="flex-col-gap-2 ">
-          <p className="font-semibold">Moacyr Contabilidade</p>
-          <p className="">
-            Almejamos impactar positivamente a vida dos nossos clientes,
-            capacitando-os a contribuir significativamente para o progresso do
-            Brasil.
-          </p>
-        </span>
-
-        <span className="flex-col-gap-2 ">
-          <p className="font-semibold">Navegação</p>
-          <ul className="flex flex-col min-w-full">
-            {navbarButtonList.map((button, index) => (
-              <Link href={button[index][1]} className="">
-                <p>{button[index][0]}</p>
-              </Link>
-            ))}
-          </ul>
-        </span>
-
-        <span className="flex-col-gap-2">
-          <p className="font-semibold">Especialidades</p>
-          <div>
-            <p className="">Prevenção de risco empresarial</p>
-            <p className="">Planejamento e controle financeiro</p>
+      <div className="flex flex-col items-center py-4 gap-6 w-full border-t border-[#cbcbcb] lg:py-8 lg:gap-10 lmd:flex-row lmd:gap-[10rem] lmd:justify-center">
+        <div className="flex flex-col items-start w-full gap-6 lg:flex-row lg:gap-32 lg:justify-center lmd:gap-16 lmd:h-[19.31rem] lmd:justify-between lmd:w-[36rem]">
+          <div className="flex flex-col items-start gap-2 w-full lg:w-[19.5rem]">
+            <h2>Moacyr Contabilidade</h2>
+            <small>
+              Almejamos impactar positivamente a vida dos nossos clientes,
+              capacitando-os a contribuir significativamente para o progresso do
+              Brasil.
+            </small>
           </div>
-        </span>
 
-        <span className="">
-          <p className="font-semibold">Como nos achar</p>
-          <span className="footer-icons">
-            <MapPin width={15} />
-            <span>
-              <p>Rua Cezira de Queiroz, 474 - Centro</p>
-              <p>Pedreira - São Paulo</p>
-              <p>CEP 13920-000</p>
-            </span>
-          </span>
+          <div className="flex flex-col items-start gap-2 w-full lg:w-[18.5rem] lmd:w-[8.5rem]">
+            <h2>Navegação</h2>
+            <ul className="flex flex-col gap-1">
+              {navbarButtonList.map((button, index) => (
+                <Link href={button[index][1]}>
+                  <li>
+                    <small className="hover:text-[#6f6f6f]">
+                      {button[index][0]}
+                    </small>
+                  </li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+        </div>
 
-          <span className="footer-icons">
-            <AlarmClockCheck width={15} />
-            <p>Segunda à Sexta das 8:00 as 17:30</p>
-          </span>
+        <div className="flex flex-col items-start w-full gap-6 lg:flex-row lg:gap-32 lg:justify-center lmd:gap-16 lmd:h-[19.31rem] lmd:justify-between lmd:w-[40rem]">
+          <div className="flex flex-col items-start gap-2 w-full lg:w-[19.5rem]">
+            <h2>Especialidades</h2>
+            <div className="flex flex-col gap-1">
+              <small>Prevenção de risco empresarial</small>
+              <small>Planejamento e controle financeiro</small>
+            </div>
+          </div>
 
-          <span className="footer-icons">
-            <Phone width={15} /> <p>(19) 3893 2236</p>
-          </span>
-
-          <span className="footer-icons">
-            <Mail width={15} />
-            <p>atendimento01@moacyrcontabil.com.br</p>
-          </span>
-        </span>
+          <div className="flex flex-col items-start gap-2 w-full lg:w-[18.5rem]">
+            <h2>Como nos achar</h2>
+            <section className="flex items-center gap-2">
+              <span className="w-5 lg:w-8 lmd:w-16">
+                <LocationIcon />
+              </span>
+              <div className="flex flex-col items-start">
+                <div>
+                  <small>Rua Cezira de Queiroz, 474 - Centro</small>
+                  <small>Pedreira - São Paulo</small>
+                  <small>CEP 13920-000</small>
+                </div>
+              </div>
+            </section>
+            <small className="flex gap-2">
+              <span className="w-5 lmd:w-8">
+                <ClockIcon />
+              </span>
+              Segunda à Sexta das 8:00 as 17:30
+            </small>
+            <small className="flex gap-2">
+              <span className="w-5 lmd:w-8">
+                <PhoneIcon />
+              </span>
+              (19) 3893 2236
+            </small>
+            <a
+              className="flex gap-2 items-center group"
+              href="mailto:atendimento01@moacyrcontabil.com.br?subject=Contato Moacyr Contabilidade do E-mail&body=Corpo do E-mail"
+            >
+              <Mail className="w-4 group-hover:text-[#6f6f6f] lmd:w-16 lmd:pr-[2rem]" />
+              <small className="group-hover:text-[#6f6f6f] lg:hidden">
+                Email de contato
+              </small>
+              <small className="hidden group-hover:text-[#6f6f6f] lg:block lmd:ml-[-2rem]">
+                atendimento01@moacyrcontabil.com.br
+              </small>
+            </a>
+          </div>
+        </div>
       </div>
 
-      <p className="text-center py-10">
+      <small className="w-[12.5rem] lg:w-full lg:text-center">
         &copy; 2024 Moacyr Gasparini. Todos os direitos reservados.
-      </p>
+      </small>
     </div>
   );
 };
