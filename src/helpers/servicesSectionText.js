@@ -22,6 +22,28 @@ export const serviceSectionText = [
       "SPED Fiscal",
     ],
   },
+  {
+    "Área Comercial": [
+      "Criticas e Sugestões",
+      "Imposto de Renda",
+      "Parcelamentos",
+      "Planejamento tributário",
+      "Abertura e encerramento de empresas",
+    ],
+  },
+  {
+    "Área Trabalhista": [
+      "Contratos de experiência",
+      "Dessídios",
+      "Férias",
+      "FGTS",
+      "Fiscalização",
+      "Folha de Pagamento",
+      "Homologações",
+      "INSS",
+      "IRRF",
+    ],
+  },
 ];
 
 export const serviceSectionText2 = [

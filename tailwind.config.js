@@ -11,9 +11,10 @@ module.exports = {
         "banner-mobile": "url('../../public/banner mobile.png')",
         "banner-contact": "url('../../public/banner contact.png')",
         "banner-service": "url('../../public/banner service.png')",
-        "carousel-one": "url('/public/carousel/slide1.jpeg'",
-        detalhe: "url('/public/detalhe_bg.png'",
         "banner-about": "url('../../public/banner about.png')",
+        "carousel-one": "url('../../public/slide1.png')",
+        "carousel-two": "url('../../public/slide2.png')",
+        "carousel-three": "url('../../public/slide3.png')",
       },
     },
     screens: {

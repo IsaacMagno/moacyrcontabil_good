@@ -13,14 +13,16 @@ import {
 
 export default function Inicio() {
   return (
-    <ReactPageScroller>
+    // <ReactPageScroller>
+    <div>
       <HeroSection />
       <InfoCard serviceSectionText={serviceSectionText} />
-      <InfoCard serviceSectionText={serviceSectionText2} />
+      {/* <InfoCard serviceSectionText={serviceSectionText2} /> */}
       <ServiceSection />
       <ContactSection />
       <AboutSection />
       <DreamSection />
-    </ReactPageScroller>
+    </div>
+    // </ReactPageScroller>
   );
 }

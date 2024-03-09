@@ -4,17 +4,16 @@ import Link from "next/link";
 import { AlarmClockCheck, Mail, MapPin, Phone } from "lucide-react";
 import { navbarButtonList } from "@/helpers/navBarButtonText";
 import { LogoIcon } from "../svgs";
+import LinkButton from "./LinkButton";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col text-sm gap-4 pb-20">
-      <div className="flex flex-col min-w-full items-center gap-2 border-b border-black pb-4 lg:flex-row lg:justify-between">
-        <a href="/inicio">
+    <div className="flex flex-col text-sm gap-4">
+      <div className="flex flex-col min-w-full items-center gap-2 border-b border-black pb-4 lg:flex-row lg:justify-between px-20 py-4">
+        <Link href="/inicio">
           <LogoIcon className="w-36 lg:w-[12rem] lmd:w-[18.3rem]" />
-        </a>
-        <button className="bg-yellow-500 rounded-2xl p-2 font-semibold hover:opacity-80">
-          Solicite um orçamento
-        </button>
+        </Link>
+        <LinkButton name={"Solicite um orçamento"} href="/" />
       </div>
 
       <div className="flex-col-gap-2 lg:grid lg:grid-cols-2 lg:px-20 lg:gap-10 xl:grid-cols-4 xl:gap-20">
@@ -32,7 +31,7 @@ const Footer = () => {
           <ul className="flex flex-col min-w-full">
             {navbarButtonList.map((button, index) => (
               <Link href={button[index][1]} className="">
-                <li className="">{button[index][0]}</li>
+                <p>{button[index][0]}</p>
               </Link>
             ))}
           </ul>
@@ -56,13 +55,16 @@ const Footer = () => {
               <p>CEP 13920-000</p>
             </span>
           </span>
+
           <span className="footer-icons">
             <AlarmClockCheck width={15} />
             <p>Segunda à Sexta das 8:00 as 17:30</p>
           </span>
+
           <span className="footer-icons">
             <Phone width={15} /> <p>(19) 3893 2236</p>
           </span>
+
           <span className="footer-icons">
             <Mail width={15} />
             <p>atendimento01@moacyrcontabil.com.br</p>
@@ -70,7 +72,7 @@ const Footer = () => {
         </span>
       </div>
 
-      <p className="text-center">
+      <p className="text-center py-10">
         &copy; 2024 Moacyr Gasparini. Todos os direitos reservados.
       </p>
     </div>

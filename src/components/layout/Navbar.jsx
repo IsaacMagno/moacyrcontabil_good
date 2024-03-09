@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-col bg-[#E9E9E9] px-16 py-4">
+    <div className="flex flex-col bg-[#E9E9E9] px-16 py-4 z-50">
       <CSSTransition
         in={menuActive}
         timeout={300}
@@ -62,9 +62,9 @@ const Navbar = () => {
         <div className="min-h-screen bg-black absolute top-0 z-50"> </div>
       ) : null}
       <div className="flex justify-between items-center">
-        <a href="/inicio">
+        <Link href="/inicio">
           <LogoIcon className="w-36 lg:w-[12rem] lmd:w-[18.3rem]" />
-        </a>
+        </Link>
 
         <div className="block lg:hidden">
           <Menu onClick={handleShowMenu} className="navbar-contact-buttons" />
