@@ -9,15 +9,18 @@ import Input from "./Input";
 import Textarea from "./Textarea";
 import LinkButton from "./LinkButton";
 import { validateEmail } from "@/app/utils/validateEmail";
+import { handleClick } from "@/app/utils/handleClick";
+
+export const defaultData = {
+  email: "",
+  name: "",
+  phone: "",
+  message: "",
+  agree: false,
+  emailType: "Contact",
+};
 
 const ContactForm = ({ hasMessage, buttonName }) => {
-  const defaultData = {
-    email: "",
-    name: "",
-    phone: "",
-    message: "",
-    agree: false,
-  };
   const [formData, setFormData] = useState(defaultData);
   const [error, setError] = useState({
     email: "",
@@ -38,23 +41,6 @@ const ContactForm = ({ hasMessage, buttonName }) => {
         email: isValidEmail ? "" : "Por favor, insira um e-mail válido.",
       }));
     }
-  };
-
-  const handleClick = () => {
-    const requiredFields = Object.keys(defaultData);
-    const isFormValid = requiredFields.every((field) => formData[field]);
-    const isValidEmail = validateEmail(formData.email);
-
-    if (!isFormValid || !isValidEmail) {
-      setError((prevError) => ({
-        ...prevError,
-        fields: "Por favor, preencha todos os campos corretamente.",
-      }));
-      return;
-    }
-    console.log(formData); // AQUI VAI A FUNCAO PARA COLOCAR OS DADOS EM ALGUM LUGAR
-    setFormData(defaultData);
-    setError({ email: "" });
   };
 
   return (
@@ -112,7 +98,13 @@ const ContactForm = ({ hasMessage, buttonName }) => {
         </small>
       </div>
       <div className="flex flex-col w-full gap-2">
-        <LinkButton onClick={handleClick} name={buttonName} hasBorder />
+        <LinkButton
+          onClick={() =>
+            handleClick(formData, setFormData, setError, defaultData)
+          }
+          name={buttonName}
+          hasBorder
+        />
         <small className="text-red-400">{error.fields}</small>
       </div>
     </form>

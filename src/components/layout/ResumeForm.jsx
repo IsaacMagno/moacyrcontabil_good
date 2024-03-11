@@ -8,6 +8,7 @@ import Dropdown from "./Dropdown";
 import { Attach } from "../svgs";
 import { validateEmail } from "@/app/utils/validateEmail";
 import FileButton from "./FileButton";
+import { handleClick } from "@/app/utils/handleClick";
 
 const ResumeForm = () => {
   const values = ["Trabalhista", "Fiscal", "Contábil", "Auxiliar"];
@@ -26,6 +27,7 @@ const ResumeForm = () => {
     role: "",
     about: "",
     file: null,
+    emailType: "Resume",
   };
   const [formData, setFormData] = useState(defaultData);
   const [error, setError] = useState({
@@ -54,24 +56,6 @@ const ResumeForm = () => {
       ...prevData,
       file: file,
     }));
-  };
-
-  const handleClick = () => {
-    const requiredFields = Object.keys(defaultData);
-    const isFormValid = requiredFields.every((field) => formData[field]);
-    const isValidEmail = validateEmail(formData.email);
-
-    if (!isFormValid || !isValidEmail) {
-      setError({
-        ...error,
-        fields: "Por favor, preencha todos os campos corretamente.",
-      });
-      return;
-    }
-
-    console.log(formData); // AQUI VAI A FUNCAO PARA COLOCAR OS DADOS EM ALGUM LUGAR
-    setFormData(defaultData);
-    setError({ email: "", fields: "" });
   };
 
   return (
@@ -195,7 +179,9 @@ const ResumeForm = () => {
         <div>
           <LinkButton
             name="Enviar informações"
-            onClick={handleClick}
+            onClick={() =>
+              handleClick(formData, setFormData, setError, defaultData)
+            }
             hasBorder
           />
         </div>

@@ -5,9 +5,9 @@ export const navbarButtonList = [
       "https://ww3.netcontabil.net.br/moacyrcontabil.com.br/netcontabil/net_login.php",
     ],
   },
-  { 1: ["Institucional", "/"] },
+  { 1: ["Institucional", "/institucional"] },
   { 2: ["Serviços", "/servicos"] },
   { 3: ["Contato", "/contato"] },
-  { 4: ["Sites", "/"] },
-  { 5: ["Planilhas", "/"] },
+  { 4: ["Planilhas", "/"] },
 ];
+// { 4: ["Sites", "/"] },

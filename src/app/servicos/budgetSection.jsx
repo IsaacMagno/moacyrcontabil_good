@@ -4,7 +4,7 @@ import { useState } from "react";
 import LinkButton from "@/components/layout/LinkButton";
 import Image from "next/image";
 import BusinessMan from "@/../../public/business man.png";
-import { budgetTexts } from "@/helpers/budgetTexts";
+import { budgetTexts, descText } from "@/helpers/budgetTexts";
 import {
   CalculatorIcon,
   BalanceIcon,
@@ -21,7 +21,7 @@ const BudgetSection = () => {
   const getSelectedGuide = (index) => setSelectedGuide(index);
 
   return (
-    <section className="flex flex-col items-center py-6 bg-[#E9E9E9] lg:gap-16 lmd:py-32 lmd:gap-32 xlg:py-[11.5rem]">
+    <section className="flex flex-col items-center py-6 bg-[#E9E9E9] lg:gap-16 lmd:py-32 lmd:gap-32 xlg:pt-[11.5rem]">
       <GuideBar
         guides={guides}
         icons={icons}
@@ -41,13 +41,19 @@ const BudgetSection = () => {
         <article className="flex flex-col items-center gap-6 lg:items-start lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
           <h1>{budgetTexts[selectedGuide].title}</h1>
           <p>{budgetTexts[selectedGuide].text}</p>
-          <LinkButton
-            href="https://api.whatsapp.com/send?phone=551938932236&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20contabilidade."
-            target="_blank"
-            name="Solicite um orçamento HOJE"
-          />
         </article>
       </section>
+      <div className="bg-yellow-500 w-[40vh] h-[40vh] rounded-xl px-5 mt-5 flex flex-col justify-center gap-5">
+        <h1>{descText[selectedGuide].title}</h1>
+        <p>{descText[selectedGuide].text}</p>
+      </div>
+      <div className="my-5">
+        <LinkButton
+          href="https://api.whatsapp.com/send?phone=551938932236&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20contabilidade."
+          target="_blank"
+          name="Solicite um orçamento HOJE"
+        />
+      </div>
     </section>
   );
 };

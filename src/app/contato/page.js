@@ -1,4 +1,3 @@
-"use client";
 import BannerContactSection from "./bannerContactSection";
 import ContactDoubtSection from "./contactDoubtSection";
 import LocationSection from "./locationSection";

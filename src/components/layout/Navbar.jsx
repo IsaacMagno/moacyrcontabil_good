@@ -46,6 +46,7 @@ const Navbar = () => {
                   key={index}
                   href={button[index][1]}
                   className="mobile-sidebar-link"
+                  onClick={() => setMenuActive(false)}
                 >
                   <li className="mobile-sidebar">
                     <p>{button[index][0]}</p>
@@ -59,7 +60,7 @@ const Navbar = () => {
 
       {/* NavBar Buttons */}
       {menuActive ? (
-        <div className="min-h-screen bg-black absolute top-0 z-50"> </div>
+        <div className="min-h-screen bg-black absolute top-0 z-50"></div>
       ) : null}
       <div className="flex justify-between items-center">
         <Link href="/inicio">
