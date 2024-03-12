@@ -21,6 +21,7 @@ const DreamSection = () => {
       <div className="relative w-full h-full lg:w-[32rem] lmd:w-[45rem] xlg:w-[60rem] flex ">
         <Image
           src={HappyPeople}
+          alt="Grupo de pessoas felizes."
           placeholder="blur"
           sizes="(max-width: 360px) 384px, (max-width: 1024px) 512px, (max-width: 1440px) 768px, (max-width: 1920px) 1024px"
         />

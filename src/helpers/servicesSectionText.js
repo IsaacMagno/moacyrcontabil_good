@@ -1,6 +1,7 @@
 export const serviceSectionText = [
   {
-    "Área Contábil": [
+    title: "Área Contábil",
+    list: [
       "Balanços",
       "Balancetes",
       "Despesas",
@@ -11,7 +12,8 @@ export const serviceSectionText = [
     ],
   },
   {
-    "Área Fiscal": [
+    title: "Área Fiscal",
+    list: [
       "Estoques",
       "Fiscalizações",
       "ICMS",
@@ -23,7 +25,8 @@ export const serviceSectionText = [
     ],
   },
   {
-    "Área Comercial": [
+    title: "Área Comercial",
+    list: [
       "Criticas e Sugestões",
       "Imposto de Renda",
       "Parcelamentos",
@@ -32,7 +35,8 @@ export const serviceSectionText = [
     ],
   },
   {
-    "Área Trabalhista": [
+    title: "Área Trabalhista",
+    list: [
       "Contratos de experiência",
       "Dessídios",
       "Férias",
