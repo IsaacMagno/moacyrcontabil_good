@@ -5,35 +5,27 @@
 
 import { Clipboard } from "../svgs";
 
-const InfoCard = ({ serviceSectionText }) => {
+const InfoCard = ({ title, list }) => {
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row justify-center items-center lg:items-center gap-5 py-5">
-      {serviceSectionText.map((section) => {
-        const key = Object.keys(section)[0];
-        return (
-          <section
-            key={key}
-            className="inline-flex items-center p-5 xlg:p-10 h-[45vh] w-[35vh] lg:h-[40vh] lg:w-[30vh] lmd:h-[50vh] lmd:w-[37.5vh] justify-center rounded-lg lg:px-4 lg:py-6 lg:rounded-[1.25rem] hover:bg-[#F6BE25] group relative cursor-pointer"
-          >
-            <article className="flex flex-col items-start gap-6 w-[50vh] h-[30vh]">
-              <h1 className="text-[#F6BE25] group-hover:text-[#323231]">
-                {key}
-              </h1>
-              <ul>
-                {section[key].map((item, index) => (
-                  <li key={index}>
-                    <p>{item}</p>
-                  </li>
-                ))}
-              </ul>
-            </article>
-            <div className="w-10 lg:w-12 lmd:w-16 xlg:w-20 absolute bottom-5 right-5">
-              <Clipboard />
-            </div>
-          </section>
-        );
-      })}
-    </div>
+    <a
+      href="/servicos"
+      target="_blank"
+      className="inline-flex items-start p-2 justify-center w-[16rem] h-[15.25rem] rounded-lg lmd:w-[25.625rem] lmd:h-[23rem] lmd:px-4 lmd:py-6 lmd:rounded-[1.25rem] hover:bg-[#F6BE25] group cursor-pointer transition-colors duration-500"
+    >
+      <article className="flex flex-col items-start gap-6 w-[12.5rem] lmd:w-[19.625rem]">
+        <h1 className="text-[#F6BE25] group-hover:text-[#323231]">{title}</h1>
+        <ul>
+          {list.map((item, index) => (
+            <li key={index}>
+              <p>{item}</p>
+            </li>
+          ))}
+        </ul>
+      </article>
+      <div className="w-10 lmd:w-20 self-end">
+        <Clipboard />
+      </div>
+    </a>
   );
 };
 

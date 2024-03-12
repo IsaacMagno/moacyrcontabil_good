@@ -15,6 +15,8 @@ module.exports = {
         "carousel-one": "url('../../public/slide1.png')",
         "carousel-two": "url('../../public/slide2.png')",
         "carousel-three": "url('../../public/slide3.png')",
+        "los-mobile": "url('../../public/los mobile bg.png')",
+        "los-desktop": "url('../../public/los bg.png')",
       },
     },
     screens: {
