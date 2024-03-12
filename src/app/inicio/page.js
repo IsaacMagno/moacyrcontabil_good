@@ -11,6 +11,8 @@ import { metadataInicial } from "@/helpers/metadata";
 export const metadata = metadataInicial;
 
 export default function Inicio() {
+  console.log("");
+
   return (
     <div>
       <MainSection>
