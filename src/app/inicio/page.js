@@ -6,6 +6,9 @@ import HeroSection from "./heroSection";
 import MainSection from "./mainSection";
 import PreventionSection from "./preventionSection";
 import InfoSection from "./infoSection";
+import { metadataInicial } from "@/helpers/metadata";
+
+export const metadata = metadataInicial;
 
 export default function Inicio() {
   return (
@@ -15,6 +18,7 @@ export default function Inicio() {
         <InfoSection />
         <PreventionSection />
       </MainSection>
+      <HeroSection />
       <ServiceSection />
       <ContactSection />
       <AboutSection />

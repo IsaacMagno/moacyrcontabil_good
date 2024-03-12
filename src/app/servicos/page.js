@@ -12,7 +12,6 @@ export default function Servicos() {
     <main className="h-full">
       <BannerServicesSection />
       <BudgetSection />
-      <ContactSection />
       <DreamSection />
       <ReasonsSection />
     </main>

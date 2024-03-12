@@ -1,7 +1,7 @@
 export const budgetTexts = [
   {
     title:
-      "Domine a contabilidade do seu empreendimento com o auxílio da Moacyr Contabilidade!",
+      "Controle a contabilidade do seu negócio com a Moacyr Contabilidade!",
     text: "O setor contábil desempenha um papel crucial ao documentar e gerenciar todas as transações financeiras de um negócio, incluindo entradas, saídas, ganhos e perdas. Contando com o suporte de contabilistas experientes, você pode assegurar uma gestão financeira precisa e eficaz para sua empresa.",
   },
   {
@@ -27,10 +27,6 @@ export const descText = [
     text: "Evite a necessidade de empréstimos com nosso planejamento do Fluxo de Caixa. O planejamento estabelece medidas que irão fortalecer o seu Fluxo de Caixa ao longo do ano. Nossa abordagem proativa ajuda a manter seu negócio sólido e resistente",
   },
   {
-    title: "Aperfeiçoamento do Controle das Contas",
-    text: "Preparamos sua equipe para o correto controle e organização das contas. Isso não apenas otimiza o processo, mas também cria uma base sólida para o crescimento sustentável, além de inibir fraudes e desvios financeiros, protegendo o que é seu",
-  },
-  {
     title: "Acompanhamento Detalhado das Despesas",
     text: "A análise minuciosa das despesas é a chave para evitar surpresas desagradáveis e buscar a redução de custos. Identificamos os maiores aumentos ocorridos, e também o que precisa ser reduzido para garantir a saúde financeira de sua empresa.",
   },
@@ -41,5 +37,9 @@ export const descText = [
   {
     title: "Apuração da Margem de Lucro",
     text: "A Margem de Lucro não é apenas um número, é a medida real do sucesso da sua empresa. Nossa expertise em apurar essa métrica crítica ajudará a impulsionar seus resultados financeiros e a definir metas realistas para o crescimento.",
+  },
+  {
+    title: "Aperfeiçoe o Controle das Contas",
+    text: "Preparamos sua equipe para o correto controle e organização das contas. Isso não apenas otimiza o processo, mas também cria uma base sólida para o crescimento sustentável, além de inibir fraudes e desvios financeiros, protegendo o que é seu",
   },
 ];
