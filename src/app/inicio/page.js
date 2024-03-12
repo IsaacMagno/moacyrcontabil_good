@@ -1,4 +1,3 @@
-"use client";
 import ServiceSection from "./serviceSection";
 import ContactSection from "../../components/commum-sections/contactSection";
 import DreamSection from "../../components/commum-sections/dreamSection";

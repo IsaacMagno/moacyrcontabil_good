@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { ArrowRight } from "lucide-react";
@@ -43,6 +43,7 @@ const HeroSection = () => {
           <LinkButton href="/servicos" name="Conheça as nossas soluções" />
           <Link
             href="https://api.whatsapp.com/send?phone=551938932236&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20contabilidade."
+            target="_blank"
             className="flex gap-2 items-center  hover:opacity-80"
           >
             <h3>Fale com um especialista</h3>
