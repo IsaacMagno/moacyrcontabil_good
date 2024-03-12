@@ -29,7 +29,7 @@ export async function POST(req, res) {
   try {
     const data = await resend.emails.send({
       from: "Acme <onboarding@resend.dev>",
-      to: [email],
+      to: "isaacmagno98@gmail.com",
       subject:
         emailType === "Contact"
           ? `Solicitação de contato: ${name}`
