@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-col bg-[#E9E9E9] px-16 py-4 z-50">
+    <div className="flex flex-col bg-[#E9E9E9] px-10 py-4 z-50">
       <CSSTransition
         in={menuActive}
         timeout={300}
