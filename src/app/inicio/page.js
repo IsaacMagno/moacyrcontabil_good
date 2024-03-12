@@ -18,7 +18,6 @@ export default function Inicio() {
         <InfoSection />
         <PreventionSection />
       </MainSection>
-      <HeroSection />
       <ServiceSection />
       <ContactSection />
       <AboutSection />
