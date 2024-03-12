@@ -1,5 +1,12 @@
 const defaultIcon = "/simbol icon.png";
 
+export const metadataInicial = {
+  title: "Moacyr Gasparini Contabilidade",
+  description:
+    "Há mais de 50 anos entregando soluções contábeis personalizadas e eficazes para nossos clientes.",
+  icons: defaultIcon,
+};
+
 export const metadataInstitutional = {
   title: "Moacyr Gasparini | Institucional",
   description:
