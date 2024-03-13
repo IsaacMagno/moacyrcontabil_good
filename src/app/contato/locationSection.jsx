@@ -53,6 +53,7 @@ const LocationSection = () => {
         <section className="w-[18.5rem] h-[16.5rem] lmd:w-[38rem] lmd:h-[33.5rem] xlg:w-[47rem] xlg:h-[41.5rem]">
           <iframe
             className="w-full h-full rounded-lg lmd:rounded-3xl"
+            title="Mapa com localização do escritório"
             src={location}
           ></iframe>
         </section>
