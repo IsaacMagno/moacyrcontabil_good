@@ -12,9 +12,12 @@ module.exports = {
         "banner-contact": "url('../../public/banner contact.png')",
         "banner-service": "url('../../public/banner service.png')",
         "banner-about": "url('../../public/banner about.png')",
-        "carousel-one": "url('../../public/slide1.png')",
-        "carousel-two": "url('../../public/slide2.png')",
-        "carousel-three": "url('../../public/slide3.png')",
+        "banner-sites": "url('../../public/banner sites.png')",
+        "carousel-one": "url('../../public/carousel/pdf.jpg')",
+        "carousel-two": "url('../../public/carousel/pdf2.jpg')",
+        "carousel-three": "url('../../public/carousel/pdf3.jpg')",
+        "carousel-four": "url('../../public/carousel/pdf4.jpg')",
+        "carousel-five": "url('../../public/carousel/pdf5.jpg')",
         "los-mobile": "url('../../public/los mobile bg.png')",
         "los-desktop": "url('../../public/los bg.png')",
       },
@@ -27,3 +30,7 @@ module.exports = {
   },
   plugins: [],
 };
+
+// "carousel-one": "url('../../public/slide1.png')",
+// "carousel-two": "url('../../public/slide2.png')",
+// "carousel-three": "url('../../public/slide3.png')",

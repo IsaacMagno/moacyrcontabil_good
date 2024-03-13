@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="flex flex-col items-center py-4 gap-6 w-full border-t border-[#cbcbcb] lg:py-8 lg:gap-10 lmd:flex-row lmd:gap-[10rem] lmd:justify-center">
         <div className="flex flex-col items-start w-full gap-6 lg:flex-row lg:gap-32 lg:justify-center lmd:gap-16 lmd:h-[19.31rem] lmd:justify-between lmd:w-[36rem]">
           <div className="flex flex-col items-start gap-2 w-full lg:w-[19.5rem]">
-            <h2>Moacyr Contabilidade</h2>
+            <h2>Gasparini Contabilidade</h2>
             <small>
               Almejamos impactar positivamente a vida dos nossos clientes,
               capacitando-os a contribuir significativamente para o progresso do
@@ -59,22 +59,20 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-2 w-full lg:w-[18.5rem]">
             <h2>Como nos achar</h2>
             <section className="flex items-center gap-2">
-              <span className="w-5 lg:w-8 lmd:w-16">
-                <LocationIcon />
+              <span>
+                <LocationIcon className="w-5 lmd:w-8" />
               </span>
               <div className="flex flex-col items-start">
-                <div>
-                  <small>Rua Cezira de Queiroz, 474 - Centro</small>
-                  <small>Pedreira - São Paulo</small>
-                  <small>CEP 13920-000</small>
-                </div>
+                <small>Rua Cezira de Queiroz, 474 - Centro</small>
+                <small>Pedreira - São Paulo</small>
+                <small>CEP 13920-000</small>
               </div>
             </section>
             <small className="flex gap-2">
               <span className="w-5 lmd:w-8">
                 <ClockIcon />
               </span>
-              Segunda à Sexta das 8:00 as 17:30
+              Segunda à Sexta das 7:00 as 17:30
             </small>
             <small className="flex gap-2">
               <span className="w-5 lmd:w-8">
@@ -91,7 +89,7 @@ const Footer = () => {
                 Email de contato
               </small>
               <small className="hidden group-hover:text-[#6f6f6f] lg:block lmd:ml-[-2rem]">
-                atendimento01@moacyrcontabil.com.br
+                atendimento01@moacyrcontabil
               </small>
             </a>
           </div>

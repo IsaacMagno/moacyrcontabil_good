@@ -11,16 +11,34 @@ const ContactDoubtSection = () => {
             <strong>Faça mais pelo seu negócio.</strong>
             <h1>Deixe nossa equipe contábil guià-lo!</h1>
           </section>
-          <p>
+          {/* <p>
             Com uma trajetória de excelência que ultrapassa 50 anos, nosso
             escritório contábil se dedica a oferecer um atendimento excepcional
             e serviços de qualidade inigualável. Nosso compromisso com a
             precisão, a inovação e a satisfação total do cliente nos posiciona
             como líderes na entrega de soluções contábeis personalizadas e
             eficazes.
-          </p>
+          </p> */}
+          <span className="flex flex-col gap-4">
+            <p>
+              Está com alguma dúvida sobre legislação? Conosco você tem
+              GRATUITAMENTE a vantagem de agendar uma visita presencial com um
+              de nossos profissionais em sua empresa!
+            </p>
+            <p>
+              Além disso, nossos canais digitais estão diariamente disponíveis
+              para ajudar você cliente:
+            </p>
+            <ul>
+              <li>• (19) 3893-5794 (Whatsapp Fiscal)</li>
+              <li>• (19) 3893-5765 (Whatsapp Contabil)</li>
+              <li>• (19) 3893-5774 (Whatsapp Trabalhista)</li>
+              <li>• (19) 3893-2236 (Whatsapp Recepção)</li>
+              <li>• (19) 9-8903-0762</li>
+            </ul>
+          </span>
         </article>
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <LinkButton
             wppButton
             href="https://api.whatsapp.com/send?phone=551938932236&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20contabilidade."
@@ -28,7 +46,7 @@ const ContactDoubtSection = () => {
             icon={<WhatsappIcon />}
             name="Contatar via WhatsApp"
           />
-        </div>
+        </div> */}
       </section>
       <ContactForm buttonName="Enviar Dúvida" hasMessage />
     </section>

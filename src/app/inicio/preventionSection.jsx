@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const PreventionSection = () => {
   return (
-    <section className="flex flex-col w-full items-center gap-6 lg:flex-row lg:justify-between xlg:px-[7rem]">
+    <section className="flex flex-col w-full items-center gap-6 lg:flex-row lg:justify-between ">
       <div className="relative w-[18.5rem] h-[18rem] lmd:w-[28rem] lmd:h-[28rem] xlg:w-[35rem] xlg:h-[35rem]">
         <Image
           src={BlackMan}

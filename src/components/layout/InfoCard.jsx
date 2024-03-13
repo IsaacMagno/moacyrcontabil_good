@@ -7,9 +7,9 @@ import { Clipboard } from "../svgs";
 
 const InfoCard = ({ title, list }) => {
   return (
-    <a
-      href="/servicos"
-      target="_blank"
+    <div
+      // href="/servicos"
+      // target="_blank"
       className="inline-flex items-start p-2 justify-center w-[16rem] h-[15.25rem] rounded-lg lmd:w-[25.625rem] lmd:h-[23rem] lmd:px-4 lmd:py-6 lmd:rounded-[1.25rem] hover:bg-[#F6BE25] group cursor-pointer transition-colors duration-500"
     >
       <article className="flex flex-col items-start gap-6 w-[12.5rem] lmd:w-[19.625rem]">
@@ -25,7 +25,7 @@ const InfoCard = ({ title, list }) => {
       <div className="w-10 lmd:w-20 self-end">
         <Clipboard />
       </div>
-    </a>
+    </div>
   );
 };
 

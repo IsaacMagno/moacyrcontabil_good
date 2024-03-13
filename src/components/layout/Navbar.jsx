@@ -72,7 +72,11 @@ const Navbar = () => {
         </div>
         <ul className="hidden lg:flex gap-6 xlg:gap-12">
           {navbarButtonList.map((button, index) => (
-            <Link key={index} href={button[index][1]}>
+            <Link
+              key={index}
+              href={button[index][1]}
+              target={`${index === 0 ? "_blank" : ""}`}
+            >
               <li>
                 <h2 className="hover:text-[#6f6f6f]">{button[index][0]}</h2>
               </li>

@@ -8,6 +8,6 @@ export const navbarButtonList = [
   { 1: ["Institucional", "/institucional"] },
   { 2: ["Serviços", "/servicos"] },
   { 3: ["Contato", "/contato"] },
-  { 4: ["Planilhas", "/"] },
+  { 4: ["Sites", "/sites"] },
 ];
-// { 4: ["Sites", "/"] },
+// { 4: ["Planilhas", "/"] },
