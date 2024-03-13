@@ -35,13 +35,13 @@ const Footer = () => {
             <h2>Navegação</h2>
             <ul className="flex flex-col gap-1">
               {navbarButtonList.map((button, index) => (
-                <Link href={button[index][1]}>
-                  <li>
-                    <small className="hover:text-[#6f6f6f]">
-                      {button[index][0]}
-                    </small>
-                  </li>
-                </Link>
+                <li>
+                  <Link href={button[index][1]}>
+                      <small className="hover:text-[#6f6f6f]">
+                        {button[index][0]}
+                      </small> 
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -59,8 +59,8 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-2 w-full lg:w-[18.5rem]">
             <h2>Como nos achar</h2>
             <section className="flex items-center gap-2">
-              <span className="w-5 lg:w-8 lmd:w-16">
-                <LocationIcon />
+              <span>
+                <LocationIcon className="w-5 lmd:w-8" />
               </span>
               <div className="flex flex-col items-start">
                 <div>

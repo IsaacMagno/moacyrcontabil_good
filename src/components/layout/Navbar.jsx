@@ -34,24 +34,26 @@ const Navbar = () => {
         classNames="menu-secondary"
         unmountOnExit
       >
-        <div className="bg-[zinc-600] fixed h-full right-0 top-0 z-50 w-64 p-5 overflow-auto">
-          <div className="flex flex-col  items-end ">
+        <div className="fixed h-full right-0 top-0 z-50 w-64 p-5 overflow-auto">
+          <div className="flex flex-col items-end">
             <X
               className="navbar-contact-buttons text-zinc-100"
               onClick={handleShowMenu}
             />
             <ul className="flex flex-col min-w-full">
               {navbarButtonList.map((button, index) => (
-                <Link
+                <li>
+                  <Link
                   key={index}
                   href={button[index][1]}
                   className="mobile-sidebar-link"
                   onClick={() => setMenuActive(false)}
                 >
-                  <li className="mobile-sidebar">
+                  <div className="mobile-sidebar">
                     <p>{button[index][0]}</p>
-                  </li>
+                  </div>
                 </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -63,7 +65,7 @@ const Navbar = () => {
         <div className="min-h-screen bg-black absolute top-0 z-50"></div>
       ) : null}
       <div className="flex justify-between items-center">
-        <Link href="/inicio">
+        <Link href="/inicio" aria-label="Ir para a página inicial">
           <LogoIcon className="w-36 lg:w-[12rem] lmd:w-[18.3rem]" />
         </Link>
 
@@ -72,11 +74,11 @@ const Navbar = () => {
         </div>
         <ul className="hidden lg:flex gap-6 xlg:gap-12">
           {navbarButtonList.map((button, index) => (
-            <Link key={index} href={button[index][1]}>
-              <li>
+            <li>
+              <Link key={index} href={button[index][1]}>
                 <h2 className="hover:text-[#6f6f6f]">{button[index][0]}</h2>
-              </li>
-            </Link>
+              </Link>
+            </li>
           ))}
         </ul>
       </div>

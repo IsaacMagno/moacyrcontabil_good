@@ -10,6 +10,7 @@ const StorySection = () => {
           alt="Fachada do escritório"
           placeholder="blur"
           sizes="(max-width: 1024px) 384px, (max-width: 1440px) 640px"
+          priority
           fill
         />
       </div>
