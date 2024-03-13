@@ -9,7 +9,7 @@ const PreventionSection = () => {
           src={BlackMan}
           alt="Homem negro apontando com o dedo"
           placeholder="blur"
-          sizes="(max-width: 1024px) 384px, (max-width: 1440px) 640px"
+          sizes="(max-width: 1024px) 384px, 512px"
           fill
         />
       </div>

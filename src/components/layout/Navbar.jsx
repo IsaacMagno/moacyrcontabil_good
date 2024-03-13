@@ -34,7 +34,7 @@ const Navbar = () => {
         classNames="menu-secondary"
         unmountOnExit
       >
-        <div className="bg-[zinc-600] fixed h-full right-0 top-0 z-50 w-64 p-5 overflow-auto">
+        <div className="fixed h-full right-0 top-0 z-50 w-64 p-5 overflow-auto">
           <div className="flex flex-col items-end">
             <X
               className="navbar-contact-buttons text-zinc-100"
