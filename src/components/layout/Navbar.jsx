@@ -65,7 +65,7 @@ const Navbar = () => {
         <div className="min-h-screen bg-black absolute top-0 z-50"></div>
       ) : null}
       <div className="flex justify-between items-center">
-        <Link href="/inicio">
+        <Link href="/inicio" aria-label="Ir para a página inicial">
           <LogoIcon className="w-36 lg:w-[12rem] lmd:w-[18.3rem]" />
         </Link>
 
