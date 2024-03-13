@@ -29,12 +29,19 @@ const LocationSection = () => {
             </div>
           </section>
 
-          <p className="flex gap-2 text-white">
+          <section className="flex gap-2 text-white items-center">
             <span className="w-5 lmd:w-8 text-white">
               <PhoneIcon />
             </span>
-            (19) 3893 2236
-          </p>
+            <div className="flex flex-col gap-4">
+              <p className="text-white">(19) 3893 5794 (Whatsapp Fiscal)</p>
+              <p className="text-white">(19) 3893 5765 (Whatsapp Contábil)</p>
+              <p className="text-white">(19) 3893 2236 (Whatsapp Trabalhista)</p>
+              <p className="text-white">(19) 3893 2236 (Whatsapp Recepção)</p>
+              <p className="text-white">(19) 9 8903 0762</p>
+              <p className="text-white">(19) 9 8903 0762</p>
+            </div>
+          </section>
 
           <p className="flex gap-2 text-white">
             <span className="w-5 lmd:w-8 text-white">
