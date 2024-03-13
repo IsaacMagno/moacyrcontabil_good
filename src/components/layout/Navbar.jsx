@@ -35,23 +35,25 @@ const Navbar = () => {
         unmountOnExit
       >
         <div className="bg-[zinc-600] fixed h-full right-0 top-0 z-50 w-64 p-5 overflow-auto">
-          <div className="flex flex-col  items-end ">
+          <div className="flex flex-col items-end">
             <X
               className="navbar-contact-buttons text-zinc-100"
               onClick={handleShowMenu}
             />
             <ul className="flex flex-col min-w-full">
               {navbarButtonList.map((button, index) => (
-                <Link
+                <li>
+                  <Link
                   key={index}
                   href={button[index][1]}
                   className="mobile-sidebar-link"
                   onClick={() => setMenuActive(false)}
                 >
-                  <li className="mobile-sidebar">
+                  <div className="mobile-sidebar">
                     <p>{button[index][0]}</p>
-                  </li>
+                  </div>
                 </Link>
+                </li>
               ))}
             </ul>
           </div>
