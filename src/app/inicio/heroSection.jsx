@@ -65,7 +65,7 @@ const HeroSection = () => {
         </SwiperSlide> */}
         </Swiper>
         <div className="mt-5 h-full flex justify-center">
-          <h1 className="font-[1000] p-3 bg-yellow-500 rounded-3xl">
+          <h1 className="font-[1000] p-2 lmd:p-3 rounded-3xl text-gray-500">
             NOSSOS DIFERENCIAIS
           </h1>
         </div>

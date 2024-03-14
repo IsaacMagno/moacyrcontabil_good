@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Instagram, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, Phone } from "lucide-react";
 
 import Link from "next/link";
 import { WhatsappIcon } from "../svgs";
@@ -40,6 +40,13 @@ const ContactBar = () => {
           className="hover:text-[#6f6f6f]"
         >
           <WhatsappIcon className="w-6" />
+        </Link>
+        <Link
+          href="https://www.facebook.com/moacyrcontabil/"
+          target="_blank"
+          className="hover:text-[#6f6f6f]"
+        >
+          <Facebook className="w-6" />
         </Link>
       </div>
     </div>
