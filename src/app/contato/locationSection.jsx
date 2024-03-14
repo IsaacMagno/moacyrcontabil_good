@@ -40,7 +40,7 @@ const LocationSection = () => {
             <span className="w-5 lmd:w-8 text-white">
               <ClockIcon />
             </span>
-            Segunda à Sexta das 8:00 as 17:30
+            Segunda à Sexta das 7:00 ás 17:00
           </p>
         </section>
         <section className="w-[18.5rem] h-[16.5rem] lmd:w-[38rem] lmd:h-[33.5rem] xlg:w-[47rem] xlg:h-[41.5rem]">

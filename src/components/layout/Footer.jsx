@@ -72,7 +72,7 @@ const Footer = () => {
               <span className="w-5 lmd:w-8">
                 <ClockIcon />
               </span>
-              Segunda à Sexta das 7:00 as 17:00
+              Segunda à Sexta das 7:00 ás 17:00
             </small>
             <small className="flex gap-2">
               <span className="w-5 lmd:w-8">
