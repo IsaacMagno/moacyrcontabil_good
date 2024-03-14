@@ -16,7 +16,7 @@ const PreventionSection = () => {
       </div>
       <article className="flex flex-col items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
         <div className="mt-5 h-full flex justify-center items-center gap-4 mb-12 bg-[#F6BE25] p-2 lmd:p-3 rounded-2xl">
-          <h1 className="font-[1000]">NOSSOS DIFERENCIAIS</h1>
+          <h1 className="font-[1000] text-black">NOSSOS DIFERENCIAIS</h1>
           <ArrowDown className="h-5 w-5 lmd:h-8 lmd:w-8   stroke-[3]" />
         </div>
         <h1 className="lg:text-3xl lmd:text-5xl ">
