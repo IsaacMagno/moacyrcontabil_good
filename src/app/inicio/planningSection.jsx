@@ -5,7 +5,7 @@ const PlanningSection = () => {
   return (
     <section className="flex flex-col-reverse w-full px-4 py-6 items-center gap-6 lg:flex-row lg:justify-between lg:px-20 lg:py-16 lmd:py-32  xlg:px-32 h-full bg-[#E9E9E9]">
       <article className="flex flex-col items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
-        <h1 className="">Planejamento Tributário</h1>
+        <h1 className="lg:text-3xl lmd:text-5xl">Planejamento Tributário</h1>
         <h2 className="">Buscando economia para você e sua empresa!</h2>
         <p className="">
           Na busca por proporcionar o melhor suporte para o crescimento contínuo

@@ -5,7 +5,7 @@ const DigitalSection = () => {
   return (
     <section className="flex flex-col-reverse w-full py-6 items-center gap-6 lg:flex-row lg:justify-between lg:py-16 lmd:py-3 xlg:py-[11.5rem] h-full">
       <article className="flex flex-col items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
-        <h1 className="">
+        <h1 className="lg:text-3xl lmd:text-5xl">
           Oferecemos a você e à sua equipe a facilidade do Certificado Digital
         </h1>
         <p className="">

@@ -36,7 +36,9 @@ const ControlSection = () => {
         />
       </div>
       <article className="flex flex-col items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
-        <h1 className="">Planejamento e Controle Financeiro</h1>
+        <h1 className="lg:text-3xl lmd:text-5xl">
+          Planejamento e Controle Financeiro
+        </h1>
         <p className="">
           No competitivo mundo dos negócios, o sucesso de sua empresa está
           diretamente ligado à eficácia de um bom planejamento financeiro.

@@ -64,6 +64,11 @@ const HeroSection = () => {
           </div>
         </SwiperSlide> */}
         </Swiper>
+        <div className="mt-5 h-full flex justify-center">
+          <h1 className="font-[1000] p-3 bg-yellow-500 rounded-3xl">
+            NOSSOS DIFERENCIAIS
+          </h1>
+        </div>
       </div>
 
       <section className="flex flex-col items-center justify-center gap-6 lg:items-start">

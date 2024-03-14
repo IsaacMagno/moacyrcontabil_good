@@ -1,15 +1,19 @@
 import Image from "next/image";
 import HappyPeople from "@/../../public/happy people.png";
 
+//  xlg:pl-[16rem]
+
 const DreamSection = () => {
   return (
-    <section className="flex flex-col w-full pt-6 items-center gap-6 bg-[#323231] lg:flex-row lg:justify-between lg:pl-20 lg:pt-0 xlg:pl-[16rem] h-full">
-      <article className="flex flex-col w-[20.5rem] items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]  py-[8vh]">
+    <section className="flex flex-col w-full pt-6 items-center gap-6 bg-[#323231] lg:flex-row lg:justify-between  lg:pt-0  h-full">
+      <article className="flex flex-col w-[20.5rem] items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem] lg:pl-20 py-[8vh]">
         <section>
-          <strong className="text-[#F6BE25]">
+          <strong className="text-[#F6BE25] lg:text-3xl lmd:text-5xl">
             Liberte-se da CLT e realize{" "}
           </strong>
-          <h1 className="text-[#F6BE25]">o sonho de ser empresário.</h1>
+          <h1 className="text-[#F6BE25] lg:text-3xl lmd:text-5xl">
+            o sonho de ser empresário.
+          </h1>
         </section>
         <p className="text-white">
           O sonho de abrir uma empresa é um grande passo na vida de qualquer

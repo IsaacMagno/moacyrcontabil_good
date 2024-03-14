@@ -14,7 +14,9 @@ const PreventionSection = () => {
         />
       </div>
       <article className="flex flex-col items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
-        <h1>Prevenção de risco empresarial</h1>
+        <h1 className="lg:text-3xl lmd:text-5xl">
+          Prevenção de risco empresarial
+        </h1>
         <div className="flex flex-col gap-4">
           <p>
             Imagine estar um passo à frente dos problemas e dos riscos de

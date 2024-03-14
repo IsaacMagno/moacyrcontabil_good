@@ -15,7 +15,7 @@ const CertificateSection = () => {
         />
       </div>
       <article className="flex flex-col items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
-        <h1 className="">Certidão Negativa</h1>
+        <h1 className="lg:text-3xl lmd:text-5xl">Certidão Negativa</h1>
         <p className="">
           Você sabia que, a qualquer momento, a falta de atenção aos detalhes
           legais pode virar uma pedra no caminho do seu negócio?
