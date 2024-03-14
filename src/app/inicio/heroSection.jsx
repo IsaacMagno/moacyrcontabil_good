@@ -1,7 +1,7 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 import "swiper/css";
@@ -64,10 +64,11 @@ const HeroSection = () => {
           </div>
         </SwiperSlide> */}
         </Swiper>
-        <div className="mt-5 h-full flex justify-center">
-          <h1 className="font-[1000] p-2 lmd:p-3 rounded-3xl text-gray-500">
+        <div className="mt-5 h-full flex justify-center items-center">
+          <h1 className="font-[1000] p-2 lmd:p-3 rounded-3xl text-gray-500 opacity-50">
             NOSSOS DIFERENCIAIS
           </h1>
+          <ArrowDown className="h-8 w-8 text-gray-500 opacity-50 stroke-[3]" />
         </div>
       </div>
 
