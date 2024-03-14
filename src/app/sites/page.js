@@ -32,7 +32,7 @@ let Sites = [
   },
   {
     nome: "MEI – Micro Empreendedor Individual",
-    link: "http://www.portaldoempreendedor.gov.br/mei-microempreendedor-individual",
+    link: "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/quero-ser-mei",
   },
   {
     nome: "Nota Fiscal Paulista",
@@ -107,7 +107,7 @@ let CND = [
   },
   {
     nome: "CND do FGTS",
-    link: "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+    link: "https://www.fgts.gov.br/Pages/sou-empregador/certificado-de-regularidade-do-fgts-crf.aspx",
   },
   {
     nome: "CND Trabalhista",
