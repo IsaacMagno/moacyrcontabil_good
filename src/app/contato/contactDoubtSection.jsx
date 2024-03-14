@@ -30,11 +30,32 @@ const ContactDoubtSection = () => {
               para ajudar você cliente:
             </p>
             <ul>
-              <li>• (19) 3893-5794 (Whatsapp Fiscal)</li>
-              <li>• (19) 3893-5765 (Whatsapp Contabil)</li>
-              <li>• (19) 3893-5774 (Whatsapp Trabalhista)</li>
-              <li>• (19) 3893-2236 (Whatsapp Recepção)</li>
-              <li>• (19) 9-8903-0762</li>
+              <li>
+                <a href="https://wa.me/551938935794" target="_blank">
+                  • (19) 3893-5794 (Whatsapp Fiscal)
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/551938935765" target="_blank">
+                  • (19) 3893-5765 (Whatsapp Contabil)
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/551938935774" target="_blank">
+                  • (19) 3893-5774 (Whatsapp Trabalhista)
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/551938932236" target="_blank">
+                  • (19) 3893-2236 (Whatsapp Recepção)
+                </a>
+              </li>
+              <li>
+                <a href="tel:+551989030762">• (19) 9-8903-0762</a>
+              </li>
+              <li>
+                <a href="tel:+551989023579">• (19) 9-8902-3579</a>
+              </li>
             </ul>
           </span>
         </article>

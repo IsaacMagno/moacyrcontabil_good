@@ -6,19 +6,34 @@ const PlanningSection = () => {
     <section className="flex flex-col-reverse w-full px-4 py-6 items-center gap-6 lg:flex-row lg:justify-between lg:px-20 lg:py-16 lmd:py-32  xlg:px-32 h-full bg-[#E9E9E9]">
       <article className="flex flex-col items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
         <h1 className="">Planejamento Tributário</h1>
+        <h2 className="">Buscando economia para você e sua empresa!</h2>
         <p className="">
-          Você sabia que, a qualquer momento, a falta de atenção aos detalhes
-          legais pode virar uma pedra no caminho do seu negócio?
+          Na busca por proporcionar o melhor suporte para o crescimento contínuo
+          de sua empresa, temos o prazer de informar que anualmente realizamos
+          uma detalhada verificação do “Enquadramento Tributário” de seu
+          negócio.
         </p>
-        <h2 className="">
-          Nossa equipe monitora periodicamente todas as Certidões Negativas –
-          CND de sua empresa, para que você não tenha surpresas desagradáveis.
-        </h2>
-        <h2>
-          Monitoramos GRATUITAMENTE as CNDs da Receita Federal, do INSS, do
-          FGTS, do ICMS, Municipal, e do CPF dos sócios.
-        </h2>
-        <h2>E esse é mais um benefício já incluso em sua mensalidade!</h2>
+        <p>
+          Nosso objetivo é garantir que sua empresa esteja no regime tributário
+          mais vantajoso, seja no Simples Nacional, Lucro Presumido, ou Lucro
+          Real. Esta análise minuciosa faz parte dos serviços inclusos em seu
+          contrato!
+        </p>
+        <p>
+          <span>
+            A escolha do regime tributário ideal pode gerar economias
+            significativas
+          </span>{" "}
+          para o seu negócio. Entendemos que a legislação fiscal está em
+          constante evolução e, por isso, é fundamental estar sempre atualizado
+          para otimizar os seus resultados financeiros.
+        </p>
+        <p>
+          Nosso compromisso é proporcionar a você a tranquilidade de saber que
+          sua empresa está aproveitando ao máximo os benefícios fiscais
+          disponíveis, garantindo uma gestão financeira mais eficiente e
+          estratégica!
+        </p>
       </article>
       <div className="relative w-[18.5rem] h-[18rem] lmd:w-[28rem] lmd:h-[28rem] xlg:w-[35rem] xlg:h-[35rem]">
         <Image

@@ -25,7 +25,7 @@ const ControlSection = () => {
         />
       </div>
 
-      <div className="relative hidden lg:block lg:w-[40vw] lg:h-[90vh] lmd:w-[31rem] xlg:w-[30vw]">
+      <div className="relative hidden lg:block lg:w-[45vw] lmd:w-[45vw] xlg:w-[45vw] lg:h-[110vh] lmd:h-[140vh]">
         <Image
           src={PeopleOnCelphone}
           alt="Senhor sentado numa mesa de escritório"
@@ -37,9 +37,14 @@ const ControlSection = () => {
       </div>
       <article className="flex flex-col items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
         <h1 className="">Planejamento e Controle Financeiro</h1>
-        <h2 className="">
+        <p className="">
           No competitivo mundo dos negócios, o sucesso de sua empresa está
           diretamente ligado à eficácia de um bom planejamento financeiro.
+        </p>
+        <h2>Como está a saúde financeira de sua empresa hoje?</h2>
+        <h2>
+          Você até possui o controle das contas, mas sabe como fazer um
+          planejamento financeiro?
         </h2>
         <ul className="flex flex-col gap-4">
           <li>
@@ -88,6 +93,11 @@ const ControlSection = () => {
             </p>
           </li>
         </ul>
+        <h2>
+          Invista no seu futuro financeiro com nosso serviço de Planejamento e
+          Controle Financeiro e dê um passo à frente na realização dos seus
+          objetivos empresariais!
+        </h2>
       </article>
     </section>
   );

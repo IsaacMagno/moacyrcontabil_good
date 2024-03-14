@@ -72,7 +72,7 @@ const Footer = () => {
               <span className="w-5 lmd:w-8">
                 <ClockIcon />
               </span>
-              Segunda à Sexta das 7:00 as 17:30
+              Segunda à Sexta das 7:00 as 17:00
             </small>
             <small className="flex gap-2">
               <span className="w-5 lmd:w-8">
@@ -97,7 +97,7 @@ const Footer = () => {
       </div>
 
       <small className="w-[12.5rem] lg:w-full lg:text-center">
-        &copy; 2024 Moacyr Gasparini. Todos os direitos reservados.
+        &copy; 2024 Gasparini Contabilidade. Todos os direitos reservados.
       </small>
     </div>
   );

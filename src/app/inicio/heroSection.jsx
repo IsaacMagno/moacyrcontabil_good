@@ -32,39 +32,37 @@ const HeroSection = () => {
             disableOnInteraction: false,
           }}
           modules={[EffectFade, Autoplay]}
-          // className="w-[30rem] h-[160vh] overflow-hidden lg:w-[42rem] lg:h-[155vh] lmd:w-[42rem] lmd:h-[130vh] xlg:w-[42rem] xlg:h-[110vh]"
-          className="w-[20rem] h-[30rem] lmd:w-[30rem] lmd:h-[40rem] xlg:w-[40rem] xlg:h-[55rem]"
+          className="w-[15rem] h-[15rem] overflow-hidden lg:w-[20rem] lg:h-[20rem] lmd:w-[35rem] lmd:h-[35rem] xlg:w-[45rem] xlg:h-[45rem]"
         >
-          {/* <SwiperSlide className="bg-carousel-one flex rounded"></SwiperSlide>
-          <SwiperSlide className="bg-carousel-two flex rounded"></SwiperSlide>
-          <SwiperSlide className="bg-carousel-three flex rounded"></SwiperSlide>
-          <SwiperSlide className="bg-carousel-four flex rounded"></SwiperSlide>
-          <SwiperSlide className="bg-carousel-five flex rounded"></SwiperSlide> */}
-          <SwiperSlide className="">
+          <SwiperSlide className="bg-carousel-one bg-contain flex"></SwiperSlide>
+          <SwiperSlide className="bg-carousel-two bg-contain flex"></SwiperSlide>
+          <SwiperSlide className="bg-carousel-three bg-contain flex"></SwiperSlide>
+
+          {/* <SwiperSlide className="">
             <div className="relative w-full h-full ">
               <Image src={PDF} fill className="rounded" />
-            </div>
+              </div>
           </SwiperSlide>
           <SwiperSlide className="">
-            <div className="relative w-full h-full ">
-              <Image src={PDF2} fill className="rounded" />
-            </div>
+          <div className="relative w-full h-full ">
+          <Image src={PDF2} fill className="rounded" />
+          </div>
           </SwiperSlide>
           <SwiperSlide className="">
-            <div className="relative w-full h-full ">
-              <Image src={PDF3} fill className="rounded" />
-            </div>
+          <div className="relative w-full h-full ">
+          <Image src={PDF3} fill className="rounded" />
+          </div>
           </SwiperSlide>
           <SwiperSlide className="">
-            <div className="relative w-full h-full ">
+          <div className="relative w-full h-full ">
               <Image src={PDF4} fill className="rounded" />
-            </div>
-          </SwiperSlide>
+              </div>
+              </SwiperSlide>
           <SwiperSlide className="">
-            <div className="relative w-full h-full ">
-              <Image src={PDF5} fill className="rounded" />
-            </div>
-          </SwiperSlide>
+          <div className="relative w-full h-full ">
+          <Image src={PDF5} fill className="rounded" />
+          </div>
+        </SwiperSlide> */}
         </Swiper>
       </div>
 
@@ -91,3 +89,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+// className="w-[20rem] h-[30rem] lmd:w-[30rem] lmd:h-[40rem] xlg:w-[40rem] xlg:h-[55rem]"

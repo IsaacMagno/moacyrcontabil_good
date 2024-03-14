@@ -23,16 +23,16 @@ const StorySection = () => {
             </h1>
           </section>
           <p>
-            Fundada em 1966, a Moacyr Gasparini é uma referência no setor
+            Fundada em 1966, a Gasparini Contabilidade é uma referência no setor
             contábil, com mais de meio século dedicado a entregar soluções
             contábeis personalizadas e eficazes. A empresa tem se destacado por
             sua capacidade de adaptar-se às mudanças do mercado e às
             necessidades específicas de cada cliente, oferecendo um leque de
             serviços que inclui gestão contábil, fiscal, trabalhista e
             consultoria para abertura e encerramento de empresas. Com um
-            compromisso sólido com a inovação e a eficiência, a Moacyr Gasparini
-            une tradição e modernidade para ajudar seus clientes a alcançarem o
-            sucesso.
+            compromisso sólido com a inovação e a eficiência, a Gasparini
+            Contabilidade une tradição e modernidade para ajudar seus clientes a
+            alcançarem o sucesso.
           </p>
         </article>
       </section>

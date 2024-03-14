@@ -10,7 +10,7 @@ export const metadata = metadataServices;
 
 export default function Servicos() {
   return (
-    <main className="h-full">
+    <main className="h-full bg-[#E9E9E9]">
       <BannerServicesSection />
       {/* <BudgetSection /> */}
       <InfoSection />
