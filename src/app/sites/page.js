@@ -127,7 +127,7 @@ const page = () => {
   return (
     <div>
       <BannerSites />
-      <div className="flex justify-center gap-20 items-start py-20 bg-[#E9E9E9]">
+      <div className="flex flex-col lg:flex-row justify-center gap-20 items-start py-20 bg-[#E9E9E9]">
         <div className="px-4  flex flex-col justify-center">
           <h1 className="my-4">Sites</h1>
           <ul>
