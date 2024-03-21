@@ -42,11 +42,11 @@ const Navbar = () => {
             />
             <ul className="flex flex-col min-w-full gap-2">
               {navbarButtonList.map((button, index) => (
-                <li className="flex gap-3 items-center justify-center h-[3rem] px-3 bg-zinc-300 hover:opacity-80 flex-grow rounded font-semibold">
+                <li className="flex gap-3 items-center justify-center bg-zinc-300 hover:opacity-80 flex-grow rounded font-semibold">
                   <Link
                     key={index}
                     href={button[index][1]}
-                    className="flex items-center flex-row px-1 rounded-md hover:cursor-pointer"
+                    className="flex items-center justify-center flex-row w-full h-12 rounded-md hover:cursor-pointer"
                     onClick={() => setMenuActive(false)}
                   >
                     <p>{button[index][0]}</p>
