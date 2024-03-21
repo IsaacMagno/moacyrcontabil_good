@@ -83,7 +83,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
         (Todos campos são obrigatórios.)
       </small>
       <div className="flex gap-2 items-center">
-        <label for="agree">
+        <label htmlFor="agree">
           <Input
             type="checkbox"
             name="agree"

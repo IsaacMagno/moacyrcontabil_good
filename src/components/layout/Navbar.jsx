@@ -42,9 +42,11 @@ const Navbar = () => {
             />
             <ul className="flex flex-col min-w-full gap-2">
               {navbarButtonList.map((button, index) => (
-                <li className="flex gap-3 items-center justify-center bg-zinc-300 hover:opacity-80 flex-grow rounded font-semibold">
+                <li
+                  key={index}
+                  className="flex gap-3 items-center justify-center bg-zinc-300 hover:opacity-80 flex-grow rounded font-semibold"
+                >
                   <Link
-                    key={index}
                     href={button[index][1]}
                     className="flex items-center justify-center flex-row w-full h-12 rounded-md hover:cursor-pointer"
                     onClick={() => setMenuActive(false)}
@@ -72,9 +74,8 @@ const Navbar = () => {
         </div>
         <ul className="hidden lg:flex gap-6 xlg:gap-12">
           {navbarButtonList.map((button, index) => (
-            <li>
+            <li key={index}>
               <Link
-                key={index}
                 href={button[index][1]}
                 target={`${index === 0 ? "_blank" : ""}`}
               >
