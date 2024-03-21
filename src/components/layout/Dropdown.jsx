@@ -9,6 +9,7 @@ const Dropdown = ({ placeholder, values, value, onChange, name }) => {
   return (
     <select
       name={name}
+      id={name}
       className="w-full p-2 rounded-lg"
       value={value || placeholder}
       onChange={onChange}

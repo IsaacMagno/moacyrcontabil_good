@@ -9,6 +9,7 @@ import { Attach } from "../svgs";
 import { validateEmail } from "@/app/utils/validateEmail";
 import FileButton from "./FileButton";
 import { handleClick } from "@/app/utils/handleClick";
+import Button from "./Button";
 
 const ResumeForm = () => {
   const values = ["Trabalhista", "Fiscal", "Contábil", "Auxiliar"];
@@ -157,7 +158,7 @@ const ResumeForm = () => {
           placeholder="Comentário de suas práticas"
           onChange={handleChange}
         />
-        <div className="w-[13rem]">
+        <label for="role" className="w-[13rem]">
           <Dropdown
             name={"role"}
             value={formData.role}
@@ -166,7 +167,7 @@ const ResumeForm = () => {
             values={values}
             onChange={handleChange}
           />
-        </div>
+        </label>
         <Textarea
           name="about"
           value={formData.about}
@@ -177,7 +178,7 @@ const ResumeForm = () => {
       </section>
       <div className="flex flex-col gap-2">
         <div>
-          <LinkButton
+          <Button
             name="Enviar informações"
             onClick={() =>
               handleClick(formData, setFormData, setError, defaultData)
