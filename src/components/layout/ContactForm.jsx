@@ -7,9 +7,9 @@
 import { useState } from "react";
 import Input from "./Input";
 import Textarea from "./Textarea";
-import LinkButton from "./LinkButton";
 import { validateEmail } from "@/app/utils/validateEmail";
 import { handleClick } from "@/app/utils/handleClick";
+import Button from "./Button";
 
 export const defaultData = {
   email: "",
@@ -83,14 +83,14 @@ const ContactForm = ({ hasMessage, buttonName }) => {
         (Todos campos são obrigatórios.)
       </small>
       <div className="flex gap-2 items-center">
-        <div>
+        <label for="agree">
           <Input
             type="checkbox"
             name="agree"
             checked={formData.agree}
             onChange={handleChange}
           />
-        </div>
+        </label>
         <small className="text-white">
           Aceito receber e-mails com ofertas e conteúdos. Prometemos não
           utilizar suas informações para spam, clique aqui e veja nossa Política
@@ -98,7 +98,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
         </small>
       </div>
       <div className="flex flex-col w-full gap-2">
-        <LinkButton
+        <Button
           onClick={() =>
             handleClick(formData, setFormData, setError, defaultData)
           }

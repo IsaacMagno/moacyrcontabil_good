@@ -15,7 +15,7 @@ const ControlSection = () => {
         />
       </div> */}
 
-      <div className="relative w-full h-[30vh] lg:hidden">
+      <div className="relative w-full h-[25vh] lg:hidden">
         <Image
           src={BusinessMan}
           alt="Senhor sentado numa mesa de escritório"
@@ -28,7 +28,7 @@ const ControlSection = () => {
       <div className="relative hidden lg:block lg:w-[45vw] lmd:w-[45vw] xlg:w-[45vw] lg:h-[110vh] lmd:h-[140vh]">
         <Image
           src={PeopleOnCelphone}
-          alt="Senhor sentado numa mesa de escritório"
+          alt="Pessoas numa mesa de escritório"
           placeholder="blur"
           sizes="(max-width: 1024px) 384px, (max-width: 1440px) 640px"
           fill
@@ -39,7 +39,7 @@ const ControlSection = () => {
         <h1 className="lg:text-3xl lmd:text-5xl">
           Planejamento e Controle Financeiro
         </h1>
-        <p className="">
+        <p>
           No competitivo mundo dos negócios, o sucesso de sua empresa está
           diretamente ligado à eficácia de um bom planejamento financeiro.
         </p>
