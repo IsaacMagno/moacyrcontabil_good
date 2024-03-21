@@ -40,18 +40,20 @@ const Navbar = () => {
               className="navbar-contact-buttons text-zinc-100"
               onClick={handleShowMenu}
             />
-            <ul className="flex flex-col min-w-full">
+            <ul className="flex flex-col min-w-full gap-2">
               {navbarButtonList.map((button, index) => (
-                <Link
+                <li
                   key={index}
-                  href={button[index][1]}
-                  className="mobile-sidebar-link"
-                  onClick={() => setMenuActive(false)}
+                  className="flex gap-3 items-center justify-center bg-zinc-300 hover:opacity-80 flex-grow rounded font-semibold"
                 >
-                  <li className="mobile-sidebar">
+                  <Link
+                    href={button[index][1]}
+                    className="flex items-center justify-center flex-row w-full h-12 rounded-md hover:cursor-pointer"
+                    onClick={() => setMenuActive(false)}
+                  >
                     <p>{button[index][0]}</p>
-                  </li>
-                </Link>
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -63,7 +65,7 @@ const Navbar = () => {
         <div className="min-h-screen bg-black absolute top-0 z-50"></div>
       ) : null}
       <div className="flex justify-between items-center">
-        <Link href="/inicio">
+        <Link href="/inicio" aria-label="Página inicial">
           <LogoIcon className="w-36 lg:w-[12rem] lmd:w-[18.3rem]" />
         </Link>
 
@@ -72,15 +74,14 @@ const Navbar = () => {
         </div>
         <ul className="hidden lg:flex gap-6 xlg:gap-12">
           {navbarButtonList.map((button, index) => (
-            <Link
-              key={index}
-              href={button[index][1]}
-              target={`${index === 0 ? "_blank" : ""}`}
-            >
-              <li>
+            <li key={index}>
+              <Link
+                href={button[index][1]}
+                target={`${index === 0 ? "_blank" : ""}`}
+              >
                 <h2 className="hover:text-[#6f6f6f]">{button[index][0]}</h2>
-              </li>
-            </Link>
+              </Link>
+            </li>
           ))}
         </ul>
       </div>

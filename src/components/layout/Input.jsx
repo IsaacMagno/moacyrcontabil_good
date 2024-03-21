@@ -19,6 +19,7 @@ const Input = ({ placeholder, type, name, value, checked, onChange }) => {
       mask={mask}
       type={type}
       name={name}
+      id={name}
       placeholder={placeholder}
       className="w-full p-2 rounded-lg"
       value={value}

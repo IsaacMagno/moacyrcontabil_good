@@ -12,6 +12,9 @@ const montserrat = Montserrat({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="banner mobile.png" as="image" />
+      </head>
       <body className={montserrat.className}>
         <div className="hidden lg:block">
           <ContactBar />

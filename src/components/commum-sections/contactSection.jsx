@@ -1,4 +1,3 @@
-import BannerServicesSection from "@/app/servicos/bannerServicesSection";
 import LinkButton from "@/components/layout/LinkButton";
 import { WhatsappIcon } from "@/components/svgs";
 import ContactForm from "../layout/ContactForm";

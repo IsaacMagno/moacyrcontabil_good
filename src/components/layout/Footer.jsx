@@ -33,15 +33,15 @@ const Footer = () => {
 
           <div className="flex flex-col items-start gap-2 w-full lg:w-[18.5rem] lmd:w-[8.5rem]">
             <h2>Navegação</h2>
-            <ul className="flex flex-col gap-1">
+            <ul className="flex flex-col">
               {navbarButtonList.map((button, index) => (
-                <Link href={button[index][1]}>
-                  <li>
+                <li>
+                  <Link href={button[index][1]}>
                     <small className="hover:text-[#6f6f6f]">
                       {button[index][0]}
                     </small>
-                  </li>
-                </Link>
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Attach } from "../svgs";
-import LinkButton from "./LinkButton";
+import Button from "./Button";
 
 const FileButton = ({ onChange }) => {
   const [fileName, setFileName] = useState("");
@@ -27,7 +27,7 @@ const FileButton = ({ onChange }) => {
         accept=".pdf"
         onChange={handleChange}
       />
-      <LinkButton
+      <Button
         name={fileName || "Anexar"}
         icon={<Attach />}
         onClick={handleClick}
