@@ -1,7 +1,7 @@
 const defaultIcon = "/simbol icon.png";
 
 export const metadataInicial = {
-  title: "Gasparini Contabilidade",
+  title: "Gasparini Contabilidade | Início",
   description:
     "Expanda seus lucro com a orientação de um contador comprometido.",
   icons: defaultIcon,
@@ -25,5 +25,12 @@ export const metadataServices = {
   title: "Gasparini Contabilidade | Serviços",
   description:
     "Braço direito do empreendedor! Contabilidade moderna para sua empresa.",
+  icons: defaultIcon,
+};
+
+export const metadataSites = {
+  title: "Gasparini Contabilidade | Sites",
+  description:
+    "Sites úteis.",
   icons: defaultIcon,
 };

@@ -1,5 +1,8 @@
 import React from "react";
 import BannerSites from "./bannerSites";
+import { metadataSites } from "../../helpers/metadata";
+
+export const metadata = metadataSites;
 
 let Sites = [
   {
