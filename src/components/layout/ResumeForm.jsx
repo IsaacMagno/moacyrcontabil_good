@@ -158,7 +158,7 @@ const ResumeForm = () => {
           placeholder="Comentário de suas práticas"
           onChange={handleChange}
         />
-        <label htmlFor="role" className="w-[13rem]">
+        <label htmlFor="role" className="w-[13rem]" aria-label="Cargo pretendido">
           <Dropdown
             name={"role"}
             value={formData.role}
