@@ -1,7 +1,7 @@
 import { EmailTemplate } from "@/components/emailTemplate";
 import { Resend } from "resend";
 
-const resend = new Resend("re_QuikgENt_4PA6xPaZjkE1CT8i3m1wdWCE");
+const resend = new Resend("re_74nAsEND_AY7rdDwaeUa4eWUDKchzjVqz");
 
 export async function POST(req, res) {
   const {
@@ -27,8 +27,7 @@ export async function POST(req, res) {
   try {
     const data = await resend.emails.send({
       from: "Acme <onboarding@resend.dev>",
-      // to: "atendimento01@moacyrcontabil.com.br",
-      to: "gustavolemes997@gmail.com",
+      to: "comercial01@moacyrcontabil.com.br",
       subject:
         emailType === "Contact"
           ? `Solicitação de contato: ${name}`
