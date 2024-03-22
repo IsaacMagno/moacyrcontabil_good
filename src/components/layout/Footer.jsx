@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="flex flex-col items-center bg-[#E9E9E9] gap-[0.625rem] py-[1.3125rem] px-8">
       <div className="flex flex-col items-center justify-center w-full gap-4 py-[0.625rem] lg:flex-row lg:justify-between xlg:px-32">
-        <a href="/inicio">
+        <a href="/inicio" aria-label="Página inicial">
           <LogoIcon className="w-36 lmd:w-[14rem]" />
         </a>
         <LinkButton
