@@ -81,6 +81,7 @@ body {
 }
 
 strong,
+button,
 mark,
 h1,
 h2,
@@ -112,6 +113,7 @@ h1 {
 
 h2,
 h3,
+button,
 span,
 a {
   font-size: 1rem;

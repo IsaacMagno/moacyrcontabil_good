@@ -68,6 +68,12 @@ export const EmailTemplate = ({
             <p>Comentário de suas práticas: {practicesComment}</p>
             <p>Cargo pretendido: {role}</p>
             <p>Mais sobre o cargo pretendido: {about}</p>
+            {/* <p>
+              Arquivo:{" "}
+              <Link href={file} download>
+                {file}
+              </Link>
+            </p> */}
           </Container>
         </Body>
       </Html>

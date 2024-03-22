@@ -17,8 +17,9 @@ export const defaultData = {
   phone: "",
   message: "",
   agree: false,
-  emailType: "Contact",
 };
+
+const emailType = "Contact";
 
 const ContactForm = ({ hasMessage, buttonName }) => {
   const [formData, setFormData] = useState(defaultData);
@@ -83,7 +84,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
         (Todos campos são obrigatórios.)
       </small>
       <div className="flex gap-2 items-center">
-        <label htmlFor="agree">
+        <label htmlFor="agree" aria-label="Aceitar termos">
           <Input
             type="checkbox"
             name="agree"
@@ -100,7 +101,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
       <div className="flex flex-col w-full gap-2">
         <Button
           onClick={() =>
-            handleClick(formData, setFormData, setError, defaultData)
+            handleClick(formData, setFormData, setError, defaultData, emailType)
           }
           name={buttonName}
           hasBorder
