@@ -17,8 +17,9 @@ export const defaultData = {
   phone: "",
   message: "",
   agree: false,
-  emailType: "Contact",
 };
+
+const emailType = "Contact";
 
 const ContactForm = ({ hasMessage, buttonName }) => {
   const [formData, setFormData] = useState(defaultData);
@@ -100,7 +101,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
       <div className="flex flex-col w-full gap-2">
         <Button
           onClick={() =>
-            handleClick(formData, setFormData, setError, defaultData)
+            handleClick(formData, setFormData, setError, defaultData, emailType)
           }
           name={buttonName}
           hasBorder

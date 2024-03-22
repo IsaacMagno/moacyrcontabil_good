@@ -1,8 +1,7 @@
-import { NextResponse } from "next/server";
 import { EmailTemplate } from "@/components/emailTemplate";
 import { Resend } from "resend";
 
-const resend = new Resend("re_DP1eKBF5_8ZqK6Mc5uKooTUc4ThE9X33d");
+const resend = new Resend("re_QuikgENt_4PA6xPaZjkE1CT8i3m1wdWCE");
 
 export async function POST(req, res) {
   const {
@@ -12,7 +11,6 @@ export async function POST(req, res) {
       phone,
       message,
       agree,
-      emailType,
       city,
       maritalStatus,
       age,
@@ -23,14 +21,14 @@ export async function POST(req, res) {
       role,
       about,
       file,
-    },
+    }, emailType,
   } = await req.json();
 
   try {
     const data = await resend.emails.send({
       from: "Acme <onboarding@resend.dev>",
       // to: "atendimento01@moacyrcontabil.com.br",
-      to: "gugalemes03@gmail.com",
+      to: "gustavolemes997@gmail.com",
       subject:
         emailType === "Contact"
           ? `Solicitação de contato: ${name}`

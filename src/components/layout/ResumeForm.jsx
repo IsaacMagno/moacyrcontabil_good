@@ -28,8 +28,9 @@ const ResumeForm = () => {
     role: "",
     about: "",
     file: null,
-    emailType: "Resume",
   };
+
+  const emailType = "Resume";
   const [formData, setFormData] = useState(defaultData);
   const [error, setError] = useState({
     email: "",
@@ -181,7 +182,7 @@ const ResumeForm = () => {
           <Button
             name="Enviar informações"
             onClick={() =>
-              handleClick(formData, setFormData, setError, defaultData)
+              handleClick(formData, setFormData, setError, defaultData, emailType)
             }
             hasBorder
           />

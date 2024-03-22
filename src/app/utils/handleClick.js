@@ -1,8 +1,20 @@
 import { validateEmail } from "./validateEmail";
 
-export const handleClick = (formData, setFormData, setError, defaultData) => {
+export const handleClick = (
+  formData,
+  setFormData,
+  setError,
+  defaultData,
+  emailType
+) => {
   const requiredFields = Object.keys(defaultData);
-  const isFormValid = requiredFields.every((field) => formData[field]);
+  const isFormValid = requiredFields.every((field) => {
+    if (field === "message") {
+      return true;
+    }
+    const value = formData[field];
+    return value !== undefined && value !== "";
+  });
   const isValidEmail = validateEmail(formData.email);
 
   if (!isFormValid || !isValidEmail) {
@@ -20,6 +32,7 @@ export const handleClick = (formData, setFormData, setError, defaultData) => {
     },
     body: JSON.stringify({
       formData,
+      emailType,
     }),
   })
     .then((response) => response.json())
