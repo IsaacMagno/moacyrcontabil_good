@@ -25,7 +25,7 @@ export const handleClick = (
     return;
   }
 
-  fetch("https://moacyrcontabil.vercel.app/api/send", {
+  fetch("https://moacyrcontabil.com.br/api/send", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
