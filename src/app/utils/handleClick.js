@@ -1,5 +1,8 @@
 import { validateEmail } from "./validateEmail";
 
+const BASE_URL = "http://localhost:3000";
+// const BASE_URL = "https://moacyrcontabil.vercel.app";
+
 export const handleClick = (
   formData,
   setFormData,
@@ -25,15 +28,19 @@ export const handleClick = (
     return;
   }
 
-  fetch("https://moacyrcontabil.vercel.app/api/send", {
+  const formDataToSend = new FormData();
+  Object.entries(formData).forEach(([key, value]) => {
+    if (key === "file") {
+      formDataToSend.append(key, value[0]); // Adicione o arquivo ao FormData
+    } else {
+      formDataToSend.append(key, value);
+    }
+  });
+  formDataToSend.append("emailType", emailType); // Adicione o tipo de e-mail
+
+  fetch(`${BASE_URL}/api/send`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      formData,
-      emailType,
-    }),
+    body: formDataToSend,
   })
     .then((response) => response.json())
     .then((data) => console.log(data))
