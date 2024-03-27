@@ -28,17 +28,7 @@ export const handleClick = (
     return;
   }
 
-  const formDataToSend = new FormData();
-  Object.entries(formData).forEach(([key, value]) => {
-    if (key === "file") {
-      formDataToSend.append(key, value[0]); // Adicione o arquivo ao FormData
-    } else {
-      formDataToSend.append(key, value);
-    }
-  });
-  formDataToSend.append("emailType", emailType); // Adicione o tipo de e-mail
-
-  fetch(`${BASE_URL}/api/send`, {
+  fetch("https://moacyrcontabil.com.br/api/send", {
     method: "POST",
     body: formDataToSend,
   })
