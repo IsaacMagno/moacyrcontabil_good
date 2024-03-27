@@ -23,23 +23,19 @@ export const budgetTexts = [
 
 export const descText = [
   {
-    title: "Fluxo de Caixa Estratégico",
-    text: "Evite a necessidade de empréstimos com nosso planejamento do Fluxo de Caixa. O planejamento estabelece medidas que irão fortalecer o seu Fluxo de Caixa ao longo do ano. Nossa abordagem proativa ajuda a manter seu negócio sólido e resistente",
+    title: "1. Aperfeiçoamento do Controle das Contas:",
+    text: "Primeiramente preparamos sua equipe para o correto controle e organização das contas, através de procedimentos padronizados. O controle das contas além de gerar informações, auxilia na inibição de fraudes e desvios financeiros em sua empresa.",
   },
   {
-    title: "Acompanhamento Detalhado das Despesas",
-    text: "A análise minuciosa das despesas é a chave para evitar surpresas desagradáveis e buscar a redução de custos. Identificamos os maiores aumentos ocorridos, e também o que precisa ser reduzido para garantir a saúde financeira de sua empresa.",
+    title: "2. Acompanhamento Detalhado das Despesas:",
+    text: "Mensalmente faremos uma análise minuciosa das despesas, buscando a redução de custos. Assim identificamos se alguma conta está acima da referência de mercado, para que seja então reduzida, melhorando assim o seu Fluxo de Caixa.",
   },
   {
-    title: "Gestão de Contas a Pagar e a Receber",
-    text: "O volume dessas contas pode ser a diferença entre o sucesso e o fracasso. Trabalhamos para buscar o equilíbrio dessas contas, ajudando a manter seu negócio longe de situações que possam prejudicar sua estabilidade financeira.",
+    title: "3. Gestão de Contas a Pagar e a Receber:",
+    text: " O volume dessas contas pode ser a diferença entre o sucesso e o fracasso do seu negócio. Trabalhamos para buscar o equilíbrio dessas contas, a fim de manter a estabilidade financeira de sua empresa.",
   },
   {
-    title: "Apuração da Margem de Lucro",
-    text: "A Margem de Lucro não é apenas um número, é a medida real do sucesso da sua empresa. Nossa expertise em apurar essa métrica crítica ajudará a impulsionar seus resultados financeiros e a definir metas realistas para o crescimento.",
-  },
-  {
-    title: "Aperfeiçoe o Controle das Contas",
-    text: "Preparamos sua equipe para o correto controle e organização das contas. Isso não apenas otimiza o processo, mas também cria uma base sólida para o crescimento sustentável, além de inibir fraudes e desvios financeiros, protegendo o que é seu",
+    title: "4. Fluxo de Caixa Estratégico:",
+    text: "Através de medidas estratégicas, buscaremos o fortalecimento do seu Fluxo de Caixa ao longo do ano, para que a empresa tenha independência financeira e não necessite de empréstimos de bancários.",
   },
 ];
