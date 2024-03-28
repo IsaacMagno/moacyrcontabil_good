@@ -131,7 +131,7 @@ const ResumeForm = () => {
             name="phone"
             value={formData.phone}
             type="tel"
-            placeholder="(xx) xxxx xxxx"
+            placeholder="(xx) x xxxx xxxx"
             onChange={handleChange}
           />
         </div>
