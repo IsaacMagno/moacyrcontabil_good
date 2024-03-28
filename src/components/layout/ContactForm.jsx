@@ -65,7 +65,7 @@ const ContactForm = ({ hasMessage, buttonName }) => {
       </div>
       <Input
         type="tel"
-        placeholder="(xx) xxxx xxxx"
+        placeholder="(xx) x xxxx xxxx"
         name="phone"
         value={formData.phone}
         onChange={handleChange}
