@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import vector from "/public/vector.png";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -13,57 +14,16 @@ import { EffectFade, Autoplay } from "swiper/modules";
 import LinkButton from "@/components/layout/LinkButton";
 import Image from "next/image";
 
-import PDF from "/public/carousel/pdf.jpg";
-import PDF2 from "/public/carousel/pdf2.jpg";
-import PDF3 from "/public/carousel/pdf3.jpg";
-import PDF4 from "/public/carousel/pdf4.jpg";
-import PDF5 from "/public/carousel/pdf5.jpg";
-
 const HeroSection = () => {
   return (
-    <section className="flex flex-col w-full items-center justify-center gap-6 lg:flex-row-reverse lg:justify-between">
-      <div>
-        <Swiper
-          spaceBetween={20}
-          slidesPerView={1}
-          effect={"fade"}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          modules={[EffectFade, Autoplay]}
-          className="w-[15rem] h-[15rem] overflow-hidden lg:w-[20rem] lg:h-[20rem] lmd:w-[35rem] lmd:h-[35rem] xlg:w-[45rem] xlg:h-[45rem]"
-        >
-          <SwiperSlide className="bg-carousel-one bg-contain flex"></SwiperSlide>
-          <SwiperSlide className="bg-carousel-two bg-contain flex"></SwiperSlide>
-          <SwiperSlide className="bg-carousel-three bg-contain flex"></SwiperSlide>
-
-          {/* <SwiperSlide className="">
-            <div className="relative w-full h-full ">
-              <Image src={PDF} fill className="rounded" />
-              </div>
-          </SwiperSlide>
-          <SwiperSlide className="">
-          <div className="relative w-full h-full ">
-          <Image src={PDF2} fill className="rounded" />
-          </div>
-          </SwiperSlide>
-          <SwiperSlide className="">
-          <div className="relative w-full h-full ">
-          <Image src={PDF3} fill className="rounded" />
-          </div>
-          </SwiperSlide>
-          <SwiperSlide className="">
-          <div className="relative w-full h-full ">
-              <Image src={PDF4} fill className="rounded" />
-              </div>
-              </SwiperSlide>
-          <SwiperSlide className="">
-          <div className="relative w-full h-full ">
-          <Image src={PDF5} fill className="rounded" />
-          </div>
-        </SwiperSlide> */}
-        </Swiper>
+    <section className="flex flex-col w-full items-center justify-center gap-6 lg:flex-row-reverse lg:justify-between h-[28.75rem] lg:h-[20rem] lmd:h-[35rem] xlg:h-[45rem]">
+      <div className="relative w-60 h-60 lg:w-[25rem] lg:h-[25rem] lmd:w-[38rem] lmd:h-[38rem] xlg:w-[45rem] xlg:h-[45rem]">
+        <Image src={vector} fill className="opacity-30" />
+        <span className="flex flex-col absolute top-[5rem] right-[-3.2rem] lg:top-[9.5rem] lg:right-[1.5rem] lmd:top-[14rem] lmd:right-[3.3rem] xlg:top-[17rem] xlg:right-28 w-[20rem] lmd:w-[30.6rem]">
+          <strong>Gasparini Contabilidade,</strong>
+          <mark>há mais de 50 anos</mark>
+          <strong>ajudando empresas!</strong>
+        </span>
       </div>
 
       <section className="flex flex-col items-center justify-center gap-6 lg:items-start">
