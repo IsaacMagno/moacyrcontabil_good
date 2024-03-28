@@ -18,7 +18,7 @@ const HeroSection = () => {
   return (
     <section className="flex flex-col w-full items-center justify-center gap-6 lg:flex-row-reverse lg:justify-between h-[28.75rem] lg:h-[20rem] lmd:h-[35rem] xlg:h-[45rem]">
       <div className="relative w-60 h-60 lg:w-[25rem] lg:h-[25rem] lmd:w-[38rem] lmd:h-[38rem] xlg:w-[45rem] xlg:h-[45rem]">
-        <Image src={vector} fill className="opacity-30" />
+        <Image src={vector} fill className="opacity-70" />
         <span className="flex flex-col absolute top-[5rem] right-[-3.2rem] lg:top-[9.5rem] lg:right-[1.5rem] lmd:top-[14rem] lmd:right-[3.3rem] xlg:top-[17rem] xlg:right-28 w-[20rem] lmd:w-[30.6rem]">
           <strong>Gasparini Contabilidade,</strong>
           <mark>há mais de 50 anos</mark>
