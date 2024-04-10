@@ -36,6 +36,6 @@ export const descText = [
   },
   {
     title: "4. Fluxo de Caixa Estratégico:",
-    text: "Através de medidas estratégicas, buscaremos o fortalecimento do seu Fluxo de Caixa ao longo do ano, para que a empresa tenha independência financeira e não necessite de empréstimos de bancários.",
+    text: "Através de medidas estratégicas buscaremos o fortalecimento do seu Fluxo de Caixa ao longo do ano, para que a empresa tenha, além do lucro desejado, uma reserva financeira capaz de socorrer a empresa em momentos difíceis.",
   },
 ];

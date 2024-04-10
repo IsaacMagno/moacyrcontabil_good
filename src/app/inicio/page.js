@@ -15,8 +15,6 @@ import ControlSection from "./controlSection";
 export const metadata = metadataInicial;
 
 export default function Inicio() {
-  console.log("");
-
   return (
     <div>
       <MainSection>
