@@ -21,21 +21,36 @@ export const budgetTexts = [
   },
 ];
 
+// export const descText = [
+//   {
+//     title: "1. Aperfeiçoamento do Controle das Contas:",
+//     text: "Primeiramente preparamos sua equipe para o correto controle e organização das contas, através de procedimentos padronizados. O controle das contas além de gerar informações, auxilia na inibição de fraudes e desvios financeiros em sua empresa.",
+//   },
+//   {
+//     title: "2. Acompanhamento Detalhado das Despesas:",
+//     text: "Mensalmente faremos uma análise minuciosa das despesas, buscando a redução de custos. Assim identificamos se alguma conta está acima da referência de mercado, para que seja então reduzida, melhorando assim o seu Fluxo de Caixa.",
+//   },
+//   {
+//     title: "3. Gestão de Contas a Pagar e a Receber:",
+//     text: " O volume dessas contas pode ser a diferença entre o sucesso e o fracasso do seu negócio. Trabalhamos para buscar o equilíbrio dessas contas, a fim de manter a estabilidade financeira de sua empresa.",
+//   },
+//   {
+//     title: "4. Fluxo de Caixa Estratégico:",
+//     text: "Através de medidas estratégicas buscaremos o fortalecimento do seu Fluxo de Caixa ao longo do ano, para que a empresa tenha, além do lucro desejado, uma reserva financeira capaz de socorrer a empresa em momentos difíceis.",
+//   },
+// ];
+
 export const descText = [
   {
-    title: "1. Aperfeiçoamento do Controle das Contas:",
-    text: "Primeiramente preparamos sua equipe para o correto controle e organização das contas, através de procedimentos padronizados. O controle das contas além de gerar informações, auxilia na inibição de fraudes e desvios financeiros em sua empresa.",
+    title: "Apuração da Lucratividade",
   },
   {
-    title: "2. Acompanhamento Detalhado das Despesas:",
-    text: "Mensalmente faremos uma análise minuciosa das despesas, buscando a redução de custos. Assim identificamos se alguma conta está acima da referência de mercado, para que seja então reduzida, melhorando assim o seu Fluxo de Caixa.",
+    title: "Projeção do Fluxo de Caixa",
   },
   {
-    title: "3. Gestão de Contas a Pagar e a Receber:",
-    text: " O volume dessas contas pode ser a diferença entre o sucesso e o fracasso do seu negócio. Trabalhamos para buscar o equilíbrio dessas contas, a fim de manter a estabilidade financeira de sua empresa.",
+    title: "Analise de 06 tipos de resultados",
   },
   {
-    title: "4. Fluxo de Caixa Estratégico:",
-    text: "Através de medidas estratégicas buscaremos o fortalecimento do seu Fluxo de Caixa ao longo do ano, para que a empresa tenha, além do lucro desejado, uma reserva financeira capaz de socorrer a empresa em momentos difíceis.",
+    title: "Acompanhamento da Gestão",
   },
 ];

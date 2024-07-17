@@ -28,29 +28,22 @@ const ControlSection = () => {
       </div>
       <article className="flex flex-col items-start gap-6 lg:w-[23rem] lmd:w-[38rem] xlg:w-[46rem]">
         <h1 className="lg:text-3xl lmd:text-5xl">
-          Planejamento e Controle Financeiro
+          CONTROLE FINANCEIRO E ANÁLISE DE RESULTADOS
         </h1>
-        <p>
-          No competitivo mundo dos negócios, o sucesso de sua empresa está
-          diretamente ligado à eficácia de um bom planejamento financeiro.
-        </p>
-        <h2>Como está a saúde financeira de sua empresa hoje?</h2>
-        <h2>
-          Você até possui o controle das contas, mas sabe como fazer um
-          planejamento financeiro?
-        </h2>
+        <h2>Sem tempo para controlar suas contas?</h2>
+        <h2>Vamos até sua empresa e fazemos para você!</h2>
         <ul className="flex flex-col gap-4">
           {descText.map((desc) => (
             <li>
-              <span>{desc.title}</span>
-              <p>{desc.text}</p>
+              <p>- {desc.title}</p>
+              {/* <p>{desc.text}</p> */}
             </li>
           ))}
         </ul>
         <h2>
-          Invista no seu futuro financeiro com nosso serviço de Planejamento e
-          Controle Financeiro e dê um passo à frente na realização dos seus
-          objetivos empresariais!
+          Invista no seu futuro financeiro com nosso serviço de Controle
+          Financeiro e Análise de Resultados, e dê um passo à frente na
+          realização dos seus objetivos empresariais!
         </h2>
       </article>
     </section>

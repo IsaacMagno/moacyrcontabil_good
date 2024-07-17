@@ -28,9 +28,9 @@ const HeroSection = () => {
 
       <section className="flex flex-col items-center justify-center gap-6 lg:items-start">
         <span className="flex flex-col">
-          <mark>Expanda seus lucros</mark>
-          <strong>com a orientação de um</strong>
-          <mark>contador comprometido</mark>
+          <mark>Somos referência no setor contábil,</mark>
+          <strong>tendo como princípios,</strong>
+          <mark>a ética, a transparência e o compromisso.</mark>
         </span>
         <div className="flex flex-col items-center justify-center gap-6 lmd:flex-row">
           <LinkButton href="/servicos" name="Conheça as nossas soluções" />
